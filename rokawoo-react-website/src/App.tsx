@@ -4,6 +4,7 @@ import Background from './Background';
 import { Navbar } from './components/Navbar/Navbar';
 import { Hero } from './components/Hero/Hero';
 import { About } from './components/About/About';
+import { Experience } from './components/Experience/Experience';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <Navbar />
       <Hero />
       <About />
+      <Experience />
     </div>
   );
 };
