@@ -10,7 +10,8 @@ export const About = () => {
       <div className={styles.content}>
         <img 
         src={getImageUrl("about/aboutImage.png")}
-        alt="rokawoo-mascot-about"
+        alt="rokawoo-mascot-about-me"
+        className={styles.aboutImg}
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
