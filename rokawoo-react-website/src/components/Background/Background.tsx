@@ -1,5 +1,5 @@
 import React from 'react';
-import './Background.css';
+import './Background.module.css';
 
 const SvgBackground: React.FC = () => (
   <svg viewBox="0 0 500 200">
@@ -10,7 +10,7 @@ const SvgBackground: React.FC = () => (
 );
 
 const Background: React.FC = () => (
-  <div className="background-container">
+  <div className="container">
     <SvgBackground />
   </div>
 );

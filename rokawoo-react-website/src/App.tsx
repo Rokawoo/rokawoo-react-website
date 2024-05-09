@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from "./App.module.css"
-import Background from './Background';
+import Background from './components/Background/Background';
 import { Navbar } from './components/Navbar/Navbar';
 import { Hero } from './components/Hero/Hero';
 import { About } from './components/About/About';
 import { Experience } from './components/Experience/Experience';
 import { Projects } from './components/Projects/Projects';
+import { Contact}
 
 const App: React.FC = () => {
   return (
