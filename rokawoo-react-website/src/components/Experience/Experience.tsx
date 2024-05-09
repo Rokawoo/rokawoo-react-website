@@ -15,7 +15,7 @@ export const Experience = () => {
             return (
               <div key={id} className={styles.skill}>
                 <div className={styles.skillImgContainer}>
-                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} draggable="false"/>
                 </div>
                 <p>{skill.title}</p>
               </div>
@@ -29,6 +29,7 @@ export const Experience = () => {
                 <img
                   src={getImageUrl(historyItem.imageSrc)}
                   alt={`${historyItem.organisation} Logo`}
+                  draggable="false"
                 />
                 <div className={styles.historyItemDetails}>
                   <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>

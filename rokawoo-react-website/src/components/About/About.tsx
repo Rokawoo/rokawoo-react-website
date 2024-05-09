@@ -12,24 +12,25 @@ export const About = () => {
         src={getImageUrl("about/aboutImage.png")}
         alt="rokawoo-mascot-about-me"
         className={styles.aboutImg}
+        draggable="false"
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="cursor-icon"/>
+            <img src={getImageUrl("about/cursorIcon.png")} alt="cursor-icon" draggable="false"/>
             <div className={styles.aboutItemText}>
               <h3>Frontend Dev</h3>
               <p>I am a Dev!</p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="server-icon"/>
+            <img src={getImageUrl("about/serverIcon.png")} alt="server-icon" draggable="false"/>
             <div className={styles.aboutItemText}>
               <h3>Backend Dev</h3>
               <p>I am a Dev!</p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/uiIcon.png")} alt="ui-icon"/>
+            <img src={getImageUrl("about/uiIcon.png")} alt="ui-icon" draggable="false"/>
             <div className={styles.aboutItemText}>
               <h3>Ui Dev</h3>
               <p>I am a Dev!</p>
