@@ -6,7 +6,7 @@ import { Hero } from './components/Hero/Hero';
 import { About } from './components/About/About';
 import { Experience } from './components/Experience/Experience';
 import { Projects } from './components/Projects/Projects';
-import { Contact}
+import { Contact} from './components/Contact/Contact'
 
 const App: React.FC = () => {
   return (
