@@ -38,6 +38,19 @@
   text-decoration: none;
 }
 
+.menuItem {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuItem:hover {
+  color: yellow;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+  font-size: 1.1em;
+  transform: translateY(-2px);
+}
+
 @media screen and (max-width: 830px) {
   .navbar {
     flex-direction: column;
