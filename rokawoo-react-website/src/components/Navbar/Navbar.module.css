@@ -44,10 +44,11 @@
 }
 
 .menuItem:hover {
-  color: yellow;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: var(--color-light);
+  text-shadow: 2px 2px 4px rgba(var(--color-light-rgb), 0.5);
   text-decoration: underline;
   font-size: 1.1em;
+  font-weight: 500;
   transform: translateY(-2px);
 }
 
