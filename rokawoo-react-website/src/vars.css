@@ -1,9 +1,17 @@
 :root {
     /* Colors */
     --color-text: #fff;
+
     --color-primary: #576cbc;
+
     --color-secondary: #19376d;
+    --color-secondary-rgb: 25, 55, 109;
+
     --color-dark: #0b2447;
+
+    --color-light-: #A5D7E8; /* Unused */
+    --color-light-rgb: 165, 215, 232;
+    
     --color-bg: #04152d;
 
     /* Fonts */

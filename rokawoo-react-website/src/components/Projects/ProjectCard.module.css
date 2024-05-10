@@ -6,10 +6,10 @@
   border-radius: 10px;
   background: linear-gradient(
     180deg,
-    #576cbc 0%,
+    var(--color-primary) 0%,
     #132a53 100%
     );
-    box-shadow: 0 16px 14px 0 #04152d;
+    box-shadow: 0 16px 14px 0 var(--color-bg);
     padding: 18px 24px;
     max-width: 345px;
 }
