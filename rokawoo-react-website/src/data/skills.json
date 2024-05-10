@@ -1,27 +1,39 @@
 [
   {
     "title": "HTML",
-    "imageSrc": "skills/html.png"
+    "imageSrc": "skills/html5.webp"
   },
   {
     "title": "CSS",
-    "imageSrc": "skills/css.png"
+    "imageSrc": "skills/css3.webp"
+  },
+  {
+    "title": "JS",
+    "imageSrc": "skills/js.webp"
   },
   {
     "title": "React",
-    "imageSrc": "skills/react.png"
+    "imageSrc": "skills/react.webp"
   },
   {
     "title": "Node",
-    "imageSrc": "skills/node.png"
+    "imageSrc": "skills/node.webp"
   },
   {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
+    "title": "Python",
+    "imageSrc": "skills/python.webp"
   },
   {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "title": "VS Code",
+    "imageSrc": "skills/vsCode.webp"
+  },
+  {
+    "title": "Jetbrains",
+    "imageSrc": "skills/jetbrains.webp"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/git.webp"
   },
   {
     "title": "Figma",

@@ -1,11 +1,11 @@
 [
   {
-    "role": "Software Engineer",
-    "organisation": "Google",
-    "startDate": "Sept, 2022",
+    "role": "Cybersecurity",
+    "organisation": "Rhoads Industries",
+    "startDate": "March, 2024",
     "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-    "imageSrc": "history/google.png"
+    "experiences": ["Secured information and sensitive data", "Found vulerabilities in system and personnel"],
+    "imageSrc": "history/rhoads.webp"
   },
   {
     "role": "UI Designer",

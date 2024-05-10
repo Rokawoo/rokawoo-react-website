@@ -16,7 +16,7 @@ export const Contact = () => {
             src={getImageUrl("contact/emailIcon.png")}
             alt="email-icon" 
             draggable="false"/>
-          <a href="mailto:myemail@email.com">myemail@email.com</a>
+          <a href="mailto:ays36@drexel.edu">myemail@email.com</a>
         </li>
         <li className={styles.link}>
           <img
@@ -24,7 +24,7 @@ export const Contact = () => {
             alt="linkedin-icon"
             draggable="false"
           />
-          <a href="https://www.linkedin.com/myname">linkedin.com/myname</a>
+          <a href="https://www.linkedin.com/in/augustus-sroka">linkedin.com/Augustus-Sroka</a>
         </li>
         <li className={styles.link}>
           <img 
@@ -32,7 +32,7 @@ export const Contact = () => {
             alt="github-icon"
             draggable="false"
           />
-          <a href="https://www.github.com/myname">github.com/myname</a>
+          <a href="https://www.github.com/Rokawoo">github.com/Rokawoo</a>
         </li>
       </ul>
     </footer>

@@ -11,7 +11,7 @@ import { Contact} from './components/Contact/Contact'
 const App: React.FC = () => {
   return (
     <div className={styles.App}>
-      <Background />
+      {/* <Background /> */}
       <Navbar />
       <Hero />
       <About />
