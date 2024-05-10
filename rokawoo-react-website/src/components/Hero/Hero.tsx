@@ -7,9 +7,9 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hello World, I'm Roka</h1>
+        <h1 className={styles.title}>Hello World, I'm Rokawoo</h1>
         <p className={styles.description}>
-          Desc.
+          ⚠ CAUTION: This person is super cool!
         </p>
         <a href="#contact" className={styles.contactBtn}>
           Contact Me
