@@ -20,6 +20,7 @@ export const Navbar = () => {
               : getImageUrl("nav/menuIcon.png")
           }
           alt="menu-button"
+          draggable="false"
           onClick={() => setMenuOpen(!menuOpen)}
         />
         <ul
