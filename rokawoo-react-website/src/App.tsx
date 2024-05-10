@@ -13,7 +13,6 @@ const App: React.FC = () => {
     <div className={styles.App}>
       {/* <Background /> */}
       <Navbar />
-      <Background />
       <Hero />
       <About />
       <Experience />
