@@ -13,9 +13,7 @@ const App: React.FC = () => {
     <div className={`${styles.App} ${styles.Reveal}`}>
       {/* <Background /> */}
       <Navbar />
-      
       <Hero />
-      
       <About />
       <Experience />
       <Projects />

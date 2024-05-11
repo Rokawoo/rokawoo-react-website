@@ -71,7 +71,7 @@
   background: var(--color-secondary);
   background: linear-gradient(
     90deg,
-     var(--color-secondary) 0%
+     var(--color-secondary) 0%,
     rgba(var(--color-secondary-rgb), 0) 100%
     );
   border-radius: 10px;
