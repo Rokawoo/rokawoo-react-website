@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <>
     <div className={styles.backgroundColor}>
-      <div className={styles.wave}></div>
+      <div className={`${styles.wave} ${styles.primary}`}></div>
 
       <section className={styles.container}>
         <div className={styles.content}>
