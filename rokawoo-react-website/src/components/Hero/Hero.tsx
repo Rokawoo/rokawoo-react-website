@@ -6,7 +6,9 @@ import { getImageUrl } from "../../utils";
 export const Hero = () => {
   return (
     <>
+    <div className={styles.background}>
     <div className={styles.wave}></div>
+
     <section className={styles.container}>
       <div className={styles.content}>
         <h1 className={styles.title}>Hello, I'm Rokawoo</h1>
@@ -26,6 +28,7 @@ export const Hero = () => {
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
     </section>
+    </div>
     </>
   );
 };
