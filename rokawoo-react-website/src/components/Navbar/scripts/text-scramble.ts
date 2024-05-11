@@ -74,7 +74,7 @@ class TextScramble {
         } else {
             this.resolve();
             this.currentStringIndex = (this.currentStringIndex + 1) % this.strings.length;
-            this.startNextTextAnimation(3000); // Delay between each text change
+            this.startNextTextAnimation(4500); // Delay between each text change
         }
     }
 
