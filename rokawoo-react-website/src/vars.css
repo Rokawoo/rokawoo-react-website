@@ -6,14 +6,14 @@
     --color-primary: #000;
 
     --color-secondary: #fff;
-    --color-secondary-rgb: 25, 55, 109;
+    --color-secondary-rgb: 255, 255, 255;
 
-    --color-dark: #0b2447;
+    --color-dark: #000;
 
-    --color-light-: #A5D7E8; /* Unused */
-    --color-light-rgb: 165, 215, 232;
+    --color-light-: #fff; /* Unused */
+    --color-light-rgb: 255, 255, 2555;
     
-    --color-bg: #04152d;
+    --color-bg: #000;
 
     /* Fonts */
     --font-roboto: "Roboto";
