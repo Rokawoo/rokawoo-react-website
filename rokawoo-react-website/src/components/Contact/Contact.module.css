@@ -1,9 +1,12 @@
 @import "../../vars.css";
 
+.backgroundColor {
+  background-color: var(--color-text-secondary);
+}
+
 .container {
   color: var(--color-text-primary);
   margin-top: 120px;
-  background-color: var(--color-secondary);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

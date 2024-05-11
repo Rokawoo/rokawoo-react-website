@@ -1,6 +1,7 @@
 @import "../../vars.css";
 
 .container {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -19,12 +20,14 @@
 }
 
 .title {
+  color: var(--color-text-secondary);
   font-size: 25px;
   font-weight: 700;
 }
 
 .description {
   margin-top: 6px;
+  color: var(--color-text-secondary);
   font-size: 25px;
   font-weight: 400;
 }
@@ -40,6 +43,7 @@
 }
 
 .skill {
+  color: var(--color-text-primary);
   font-size: 25px;
   font-weight: 400;
   border-radius: 100px;

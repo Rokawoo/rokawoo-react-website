@@ -1,8 +1,13 @@
 @import "../../vars.css";
+@import "../../wave.css";
+
+.backgroundColor {
+  background-color: var(--color-primary);
+}
 
 .container {
   margin-top: 76px;
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
   margin-left: 10%;
   margin-right: 10%;
 }
