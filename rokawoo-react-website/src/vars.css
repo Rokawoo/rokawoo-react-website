@@ -8,10 +8,10 @@
     --color-secondary: #fff;
     --color-secondary-rgb: 255, 255, 255;
 
-    --color-dark: #000;
+    --color-light: #ffe481;
+    --color-light-rgb: 255, 228, 129;
 
-    --color-light-: #fff; /* Unused */
-    --color-light-rgb: 255, 255, 2555;
+    --color-dark: #5b6692;
     
     --color-bg: #000;
 
