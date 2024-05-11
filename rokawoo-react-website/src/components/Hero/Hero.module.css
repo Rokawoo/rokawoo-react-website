@@ -72,6 +72,7 @@
   }
 }
 
+/*
 .topBlur {
   position: absolute;
   width: 50vw;
@@ -99,6 +100,7 @@
   filter: blur(100px);
   z-index: 0;
 }
+*/
 
 @media screen and (max-width: 830px) {
   
