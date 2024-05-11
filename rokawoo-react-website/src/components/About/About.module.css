@@ -12,6 +12,7 @@
 }
 
 .title {
+  margin-bottom: 5%;
   color: var(--color-text);
   font-size: 35px;
   font-weight: 700;
@@ -25,8 +26,8 @@
   align-items: center;
 }
 
-.aboutImage {
-  width: 50px;
+.aboutImg {
+  width: 450px;
 }
 
 .aboutItems {

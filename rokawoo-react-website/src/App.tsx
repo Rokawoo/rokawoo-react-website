@@ -10,10 +10,12 @@ import { Contact} from './components/Contact/Contact'
 
 const App: React.FC = () => {
   return (
-    <div className={styles.App}>
+    <div className={`${styles.App} ${styles.Reveal}`}>
       {/* <Background /> */}
       <Navbar />
+      
       <Hero />
+      
       <About />
       <Experience />
       <Projects />

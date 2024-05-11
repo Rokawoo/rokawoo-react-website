@@ -101,11 +101,17 @@
 }
 
 @media screen and (max-width: 830px) {
+  
   .container {
     flex-direction: column-reverse;
   }
 
   .content {
     align-items: center;
+  }
+
+  .heroImg {
+    width: 600px;
+    margin-bottom: 5%;
   }
 }

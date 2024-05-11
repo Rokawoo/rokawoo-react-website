@@ -6,3 +6,15 @@
     height: 100%;
     overflow: hidden;
 }
+
+.Reveal {
+    width: 100%;
+    animation: reveal 2.5s steps(999), blink .5s step-end infinite alternate;
+    transform-origin: center; /* Set the transform origin to the center */
+}
+
+@keyframes reveal {
+    from {
+        transform: scaleX(0); /* Start the animation from a scale of 0 */
+    }
+}
