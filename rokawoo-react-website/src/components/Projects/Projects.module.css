@@ -2,12 +2,12 @@
 @import "../../wave.css";
 
 .backgroundColor {
-  background-color: var(--color-primary);
+  background-color: var(--color-text-secondary);
 }
 
 .container {
   margin-top: 76px;
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   margin-left: 10%;
   margin-right: 10%;
 }

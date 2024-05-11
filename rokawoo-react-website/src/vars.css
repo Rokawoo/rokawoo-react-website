@@ -4,6 +4,7 @@
     --color-text-secondary: #000;
 
     --color-primary: #000;
+    --color-primary-rgb: 0, 0, 0;
 
     --color-secondary: #fff;
     --color-secondary-rgb: 255, 255, 255;
@@ -12,6 +13,7 @@
     --color-light-rgb: 255, 228, 129;
 
     --color-dark: #5b6692;
+    --color-dark-rgb: 91, 102, 146;
     
     --color-bg: #000;
 

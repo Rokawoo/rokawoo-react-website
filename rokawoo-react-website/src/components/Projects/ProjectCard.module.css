@@ -7,7 +7,7 @@
   border-radius: 10px;
   background: linear-gradient(
     180deg,
-    var(--color-primary) 0%,
+    var(--color-dark) 0%,
     var(--color-secondary) 100%
     );
     box-shadow: 0 16px 14px 0 var(--color-bg);

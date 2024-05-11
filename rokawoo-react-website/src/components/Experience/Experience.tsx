@@ -8,6 +8,8 @@ import { getImageUrl } from "../../utils";
 export const Experience = () => {
   return (
     <div className={styles.backgroundColor}>
+      <div className={`${styles.wave} ${styles.primary}`}></div>
+
       <section className={styles.container} id="experience">
         <h2 className={styles.title}>Experience</h2>
         <div className={styles.content}>
