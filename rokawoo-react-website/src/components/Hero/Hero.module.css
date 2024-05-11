@@ -51,9 +51,9 @@
 }
 
 .heroImg {
-  width: 50%;
+  width: 800px;
   z-index: 1;
-
+  
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
