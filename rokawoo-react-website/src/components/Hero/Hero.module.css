@@ -38,6 +38,10 @@
   -webkit-background-clip: text;
 }
 
+.title::selection{
+  -webkit-text-fill-color: var(--color-text-secondary);
+}
+
 .description {
   font-size: 30px;
   font-family: var(--font-roboto);

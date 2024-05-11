@@ -8,6 +8,16 @@
     cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat928.cur), auto;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: var(--color-text-secondary);
+    background: var(--color-light);
+  }
+  
+  ::selection {
+    color: var(--color-text-secondary);
+    background: var(--color-light);
+  }
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
