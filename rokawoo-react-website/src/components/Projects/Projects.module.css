@@ -2,7 +2,7 @@
 
 .container {
   margin-top: 76px;
-  color: var(--color-text);
+  color: var(--color-text-primary);
   margin-left: 10%;
   margin-right: 10%;
 }

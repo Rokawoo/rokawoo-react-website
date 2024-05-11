@@ -1,14 +1,15 @@
 @import "../../vars.css";
+@import "../../wave.css";
 
-.background {
-  background-color: white;
+.backgroundColor {
+  background-color: var(--color-secondary);
 }
 
 .container {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 49px;
   z-index: 1;
   margin-left: 10%;
@@ -19,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: var(--color-text-alt);
+  color: var(--color-text-secondary);
   z-index: 1;
 }
 
@@ -46,7 +47,7 @@
 .contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: var(--color-text-primary);
   border-radius: 100px;
   font-size: 30px;
   font-weight: 600;
@@ -57,7 +58,8 @@
 .heroImg {
   width: 800px;
   z-index: 1;
-  
+  justify-content: space-between;
+
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;

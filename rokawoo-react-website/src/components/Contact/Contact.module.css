@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .container {
-  color: var(--color-text);
+  color: var(--color-text-primary);
   margin-top: 120px;
   background-color: var(--color-secondary);
   display: flex;
@@ -39,7 +39,7 @@
 }
 
 .link a {
-  color: var(--color-text);
+  color: var(--color-text-primary);
   text-decoration: none;
   font-size: 30px;
   font-weight: 400;
