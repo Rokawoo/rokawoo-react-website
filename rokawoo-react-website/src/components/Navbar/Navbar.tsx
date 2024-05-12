@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import TextScramble from "./scripts/text-scramble.ts"; // Adjust the path accordingly
+import TextScramble from "./scripts/text-scramble.ts";
 
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
@@ -20,7 +20,7 @@ export const Navbar = () => {
 
         return () => {
             if (textScramble) {
-                textScramble.setText("Welcome to Rokaspace");
+                textScramble.setText(titleRef.current?.textContent || "Welcome to Rokaspace");
             }
         };
     }, []);
