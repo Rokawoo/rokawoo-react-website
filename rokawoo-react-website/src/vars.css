@@ -9,6 +9,13 @@
     --color-secondary: #fff;
     --color-secondary-rgb: 255, 255, 255;
 
+    --color-accent-1: #00c2ff;
+    --color-accent-1-rgb: 0,194,255;
+    --color-accent-2: #ff00c2;
+    --color-accent-2-rgb: 255, 0, 194;
+    --color-accent-3: #fad400;
+    --color-accent-3-rgb: 250, 212, 0;
+
     --color-light: #ffe481;
     --color-light-rgb: 255, 228, 129;
 
