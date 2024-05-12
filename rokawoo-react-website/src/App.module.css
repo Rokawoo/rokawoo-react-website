@@ -6,6 +6,7 @@
     height: 100%;
     overflow: hidden;
     cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat928.cur), auto;
+    background-color: var(--color-primary);
 }
 
 ::-moz-selection { /* Code for Firefox */

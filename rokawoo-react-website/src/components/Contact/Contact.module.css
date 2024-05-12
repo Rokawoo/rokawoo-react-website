@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .backgroundColor {
-  background-color: var(--color-text-secondary);
+  background-color: var(--color-primary);
 }
 
 .container {
