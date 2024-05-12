@@ -62,6 +62,7 @@
 
 .aboutItem:hover {
   background-size: 100% 100%;
+  text-shadow: 2px 2px 4px var(--color-text-secondary);
 }
 
 .aboutItem h3 {

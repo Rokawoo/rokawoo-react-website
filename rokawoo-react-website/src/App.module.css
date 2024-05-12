@@ -29,14 +29,11 @@
 }
   
 ::-webkit-scrollbar-track {
-    --stop-1: var(--color-accent-1);
-    --stop-2: var(--color-accent-2);
-    --stop-3: var(--color-accent-3);
     background: repeating-linear-gradient(
       45deg,
-      var(--stop-1) 0 10%,
-      var(--stop-2) 0 20%,
-      var(--stop-3) 0 30%
+      var(--color-accent-1) 0 10%,
+      var(--color-accent-2) 0 20%,
+      var(--color-accent-3) 0 30%
     );
   }
 
