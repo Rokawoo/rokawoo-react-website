@@ -53,11 +53,11 @@
   background-image: linear-gradient(
     90deg,
     rgba(var(--color-dark-rgb), 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-    );
-    background-size: 0 100%;
-    background-repeat: no-repeat;
-    transition: 0.4s;
+    rgba(var(--color-secondary-rgb), 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
 }
 
 .aboutItem:hover {
