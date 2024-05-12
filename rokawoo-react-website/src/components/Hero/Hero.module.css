@@ -32,8 +32,8 @@
   font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
+    rgba(var(--color-text-secondary-rgb), 1) 70%,
+    rgba(var(--color-text-primary-rgb), 0) 120%
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
