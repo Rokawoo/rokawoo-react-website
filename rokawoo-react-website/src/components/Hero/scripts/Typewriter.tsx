@@ -29,7 +29,10 @@ const Typewriter: React.FC = () => {
   const isVarHighlighted = (index: number) => 
     index >= 0 && index <= 2;
   const isKeyHighlighted = (index: number) => 
-    index >= 20 && index <= 22;
+    (index >= 19 && index <= 22) ||
+    (index >= 36 && index <= 39) ||
+    (index >= 52 && index <= 59) ||
+    (index >= 86 && index <= 95)  
   const isStringHighlighted = (index: number) =>
     (index >= 25 && index <= 30) ||
     (index >= 42 && index <= 45) ||
