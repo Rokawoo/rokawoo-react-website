@@ -1,4 +1,3 @@
-// Hero.tsx
 import React from "react";
 
 import Typewriter from "./scripts/Typewriter";
@@ -15,14 +14,7 @@ export const Hero = () => {
           <div className={styles.content}>
             <h1 className={styles.title}>Hello, I'm RΩKΔ</h1>
             <p className={styles.description}>
-              <Typewriter
-                text={`var object = {
-                  name: 'Roka',
-                  age: '19',
-                  location: 'Philadelphia, PA',
-                  properties:['he', 'they', 'UTC-04:00']
-                };`}
-              />
+              <Typewriter />
             </p>
             {/*
             <a href="#contact" className={styles.contactBtn}>
