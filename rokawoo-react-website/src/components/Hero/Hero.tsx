@@ -20,7 +20,7 @@ export const Hero = () => {
                   name: 'Roka',
                   age: '19',
                   location: 'Philadelphia, PA',
-                  properties:['UTC-04:00', 'he', 'they']
+                  properties:['he', 'they', 'UTC-04:00']
                 };`}
               />
             </p>

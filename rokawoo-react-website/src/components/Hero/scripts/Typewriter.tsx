@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
-
 import styles from "./code-typewriter.module.css";
 
-interface Props {
-  text: string;
-}
-
-const Typewriter: React.FC<Props> = ({ text }) => {
+const Typewriter: React.FC = () => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const typeSpeed = 100;
+
+  const text = `var object = {
+    name: 'Roka',
+    age: '19',
+    location: 'Philadelphia, PA',
+    properties:['he', 'they', 'UTC-04:00']
+};`;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,16 +26,32 @@ const Typewriter: React.FC<Props> = ({ text }) => {
     return () => clearInterval(interval);
   }, [currentIndex, text]);
 
+  const isVarHighlighted = (index: number) => 
+    index >= 0 && index <= 2;
+  const isKeyHighlighted = (index: number) => 
+    index >= 20 && index <= 22;
+  const isStringHighlighted = (index: number) =>
+    (index >= 25 && index <= 30) ||
+    (index >= 42 && index <= 45) ||
+    (index >= 62 && index <= 79) ||
+    (index >= 98 && index <= 101) ||
+    (index >= 104 && index <= 109) ||
+    (index >= 112 && index <= 122) ;
+    ;
+;
+
   return (
     <pre id="typewriter" className={styles.typewriter}>
       {displayText.split("").map((char, index) => (
         <span
           key={index}
           className={
-            char === "'" || char === '"' || char === ";"
-              ? styles.stringHighlight
-              : char === "v" || char === "a" || char === "r"
+            isVarHighlighted(index)
               ? styles.varHighlight
+              :isKeyHighlighted(index)
+              ? styles.keyHighlight
+              : isStringHighlighted(index)
+              ? styles.stringHighlight
               : ""
           }
         >

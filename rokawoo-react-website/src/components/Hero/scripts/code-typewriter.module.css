@@ -1,9 +1,15 @@
+@import "../../../vars.css";
+
 .varHighlight {
-  color: #C0AD60;
+  color: #00c2ff;
+}
+
+.keyHighlight {
+  color: #00c2ff;
 }
 
 .stringHighlight {
-  color: rgba(253, 149, 90, 0.8);
+  color: #fad308;
 }
 
 #typewriter {
