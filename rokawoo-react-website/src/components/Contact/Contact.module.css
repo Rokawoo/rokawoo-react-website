@@ -49,7 +49,7 @@
   letter-spacing: 1.5px;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1080px) {
   .container {
     flex-direction: column;
     gap: 23px;
