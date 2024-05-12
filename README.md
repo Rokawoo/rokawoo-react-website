@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/129356996?v=4" alt="Website Logo" width="400"/>
+  <img src="https://github.com/Rokawoo/rokawoo-react-website/assets/129356996/775cb09f-5f72-4026-ac9f-c1517452a97b" alt="Website Logo" width="400"/>
 </p>
 
 <div align="center">
