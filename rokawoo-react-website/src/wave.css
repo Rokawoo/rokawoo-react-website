@@ -1,0 +1,55 @@
+@import "./vars.css";
+
+.wave {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 100%;
+}
+
+.wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  right: -25%;
+  top: 20px;
+}
+
+.wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  left: -25%;
+  top: -240px;
+  clip-path: ellipse(100% 15% at -15% 100%);
+}
+
+.primary {
+  background: var(--color-primary);
+}
+
+.secondary {
+  background: var(--color-secondary);
+}
+
+.primary:before {
+  background-color: var(--color-secondary);
+}
+
+.primary:after {
+  background-color: var(--color-primary);
+}
+
+.secondary:before {
+  background-color: var(--color-primary);
+}
+
+.secondary:after {
+  background-color: var(--color-secondary);
+}

@@ -1,14 +1,18 @@
 @import "../../vars.css";
+@import "../../wave.css";
 
+.backgroundColor {
+  background-color: var(--color-secondary);
+}
 .container {
-  color: var(--color-text);
+  color: var(--color-text-secondary);
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .title {
-  color: var(--color-text);
+  color: var(--color-text-secondary);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
@@ -30,6 +34,7 @@
 }
 
 .skill {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +42,7 @@
 }
 
 .skillImgContainer {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -64,15 +69,16 @@
 }
 
 .historyItem {
+  z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 17px;
-  background: var(--color-secondary);
+  background: var(--color-dark);
   background: linear-gradient(
     90deg,
-    var(--color-secondary) 0%,
-    rgba(var(--color-secondary-rgb), 0) 100%
+     var(--color-dark) 0%,
+    rgba(var(--color-dark-rgb), 0) 100%
     );
   border-radius: 10px;
   padding: 24px;
@@ -104,7 +110,7 @@
   margin-left: 17px;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1080px) {
   .content {
     flex-direction: column;
     align-items: center;

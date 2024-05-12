@@ -5,4 +5,40 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat928.cur), auto;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--color-text-secondary);
+    background: var(--color-light);
+  }
+  
+  ::selection {
+    color: var(--color-text-secondary);
+    background: var(--color-light);
+  }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: repeating-linear-gradient(
+      45deg,
+      var(--color-accent-1) 0 10%,
+      var(--color-accent-2) 0 20%,
+      var(--color-accent-3) 0 30%
+    );
+  }
+
+@media screen and (max-width: 1080px) {
+    ::-webkit-scrollbar {
+        display: none;
+      }
 }

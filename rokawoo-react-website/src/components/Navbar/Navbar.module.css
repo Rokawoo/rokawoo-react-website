@@ -1,5 +1,9 @@
 @import "../../vars.css";
 
+.backgroundColor {
+  background-color: var(--color-primary);
+}
+
 .navbar {
   position: relative;
   display: flex;
@@ -14,7 +18,7 @@
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-text-primary);
 }
 
 
@@ -34,14 +38,37 @@
 
 .menuItems a {
   font-size: 25px;
-  color: var(--color-text);
+  color: var(--color-text-primary);
   text-decoration: none;
 }
 
-@media screen and (max-width: 830px) {
+.menuItem {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuItem:hover {
+  color: var(--color-light);
+  text-indent: 5%;
+  text-shadow: 2px 2px 4px rgba(var(--color-light-rgb), 0.65);
+  text-decoration: underline;
+  font-size: 1.1em;
+  font-weight: 500;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1080px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .title {
+    margin-top: 15%;
+    align-self: center;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 100px;
   }
 
   .menu {
@@ -64,15 +91,31 @@
     flex-direction: column;
     align-items: center;
     gap: 13px;
+    border: 5px solid transparent;
+    border-image: repeating-linear-gradient(
+      45deg,
+      var(--color-accent-1),
+      var(--color-accent-1) 20px,
+      var(--color-accent-2) 20px,
+      var(--color-accent-2) 40px,
+      var(--color-accent-3) 40px,
+      var(--color-accent-3) 60px
+    ) 5;
+    
+
     border-radius: 10px;
-    background: rgb(25, 55, 109);
+    background: var(--color-primary);
     background: linear-gradient(
       0deg,
-      rgba(var(--color-secondary-rgb), 0.2) 0%,
-      rgba(var(--color-secondary-rgb), 1) 100%
+      rgba(var(--color-primary-rgb), 0.2) 0%,
+      rgba(var(--color-primary-rgb), 1) 100%
     );
     padding: 24px 33px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .menuItem:hover {
+    text-indent: 0%;
   }
 
   .menuOpen {

@@ -1,4 +1,9 @@
 @import "../../vars.css";
+@import "../../wave.css";
+
+.backgroundColor {
+  background-color: var(--color-secondary);
+}
 
 .container {
   position: relative;
@@ -15,43 +20,52 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: var(--color-text);
+  color: var(--color-text-secondary);
   z-index: 1;
 }
 
 .title {
   font-size: 72px;
   font-weight: 900;
+  margin-top: 230px;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 1) 70%,
+    rgba(0, 0, 0, 1) 70%,
     rgba(255, 255, 255, 0) 120%
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
+.title::selection{
+  -webkit-text-fill-color: var(--color-text-secondary);
+}
+
 .description {
   font-size: 30px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
+  min-height: 230px;
 }
 
+/*
 .contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: var(--color-text-primary);
   border-radius: 100px;
   font-size: 30px;
   font-weight: 600;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
+*/
 
 .heroImg {
-  width: 50%;
+  margin-left: auto;
+  width: 800px;
   z-index: 1;
 
   animation-name: floating;
@@ -72,6 +86,7 @@
   }
 }
 
+/*
 .topBlur {
   position: absolute;
   width: 50vw;
@@ -99,13 +114,29 @@
   filter: blur(100px);
   z-index: 0;
 }
+*/
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1440px) {
+  
   .container {
     flex-direction: column-reverse;
   }
 
   .content {
     align-items: center;
+  }
+
+  .title {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .description {
+    font-size: 26px;
+  }
+
+  .heroImg {
+    max-width: 100%;
+    margin-bottom: 5%;
   }
 }

@@ -1,0 +1,41 @@
+@import "../../../vars.css";
+
+.varHighlight {
+  color: #00c2ff;
+}
+
+.keyHighlight {
+  color: #ff00c2;
+}
+
+.stringHighlight {
+  color: #fad308;
+}
+
+#typewriter {
+  font-size: 2em;
+  margin: 0;
+  font-family: "Courier New";
+}
+#typewriter:after {
+  content: "|";
+  -webkit-animation: blink 500ms linear infinite alternate;
+          animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
