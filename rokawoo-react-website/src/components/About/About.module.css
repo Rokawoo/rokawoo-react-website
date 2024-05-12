@@ -85,7 +85,7 @@
   }
 
   .aboutImage {
-    display: none;
+    max-width: 100%;
   }
 
   .aboutItem {

@@ -126,8 +126,17 @@
     align-items: center;
   }
 
+  .title {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .description {
+    font-size: 26px;
+  }
+
   .heroImg {
-    width: 600px;
+    max-width: 100%;
     margin-bottom: 5%;
   }
 }
