@@ -12,16 +12,16 @@
     "imageSrc": "skills/js.webp"
   },
   {
+    "title": "Python",
+    "imageSrc": "skills/python.webp"
+  },
+  {
     "title": "React",
     "imageSrc": "skills/react.webp"
   },
   {
     "title": "Node",
     "imageSrc": "skills/node.webp"
-  },
-  {
-    "title": "Python",
-    "imageSrc": "skills/python.webp"
   },
   {
     "title": "VS Code",
