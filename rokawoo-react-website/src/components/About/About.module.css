@@ -42,9 +42,8 @@
   flex-direction: column;
   gap: 50px;
   border-radius: 20px;
-  background: #000;
-  padding: 20px;
-  padding-right: 48px;
+  background: var(--color-primary);
+  padding: 20px 74px 20px 20px;
   border: 2px solid white;
 }
 
@@ -58,7 +57,6 @@
   border-right: 20px solid transparent;
   border-top: 20px solid #fff;
 }
-
 
 .aboutItem {
   display: flex;
