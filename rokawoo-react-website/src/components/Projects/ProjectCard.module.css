@@ -94,6 +94,7 @@
   color: black;
   outline: 3px solid black;
   outline-offset: -3px;
+  text-shadow: 2px 2px var(--color-text-secondary);
 }
 
 @keyframes shake {
