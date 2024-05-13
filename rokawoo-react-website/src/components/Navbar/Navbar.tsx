@@ -14,8 +14,8 @@ export const Navbar = () => {
         if (titleRef.current) {
             textScramble = new TextScramble(titleRef.current as HTMLElement, [
                 'Hοmε Ιs Α Hουsε Wιth Α Hεαrτ',
-              'Wεlcοmε Tο Μγ Rοκαspacε <3',
-              'Ι\'m Jυsτ Sο Hαppγ Tο Sεε Υου'
+                'Wεlcοmε Tο Μγ Rοκαspacε <3',
+                'Ι\'m Jυsτ Sο Hαppγ Tο Sεε Υου'
             ]);
         }
 

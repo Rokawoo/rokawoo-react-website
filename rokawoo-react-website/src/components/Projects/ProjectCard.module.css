@@ -46,9 +46,22 @@
   color: var(--color-text-primary);
   font-size: 25px;
   font-weight: 400;
+  text-shadow: 2px 2px var(--color-text-secondary);
   border-radius: 100px;
-  background: var(--color-dark);
+  background: var(--color-primary);
   padding: 2px 22px;
+}
+
+.skills .skill {
+  background: var(--color-accent-1);
+}
+
+.skills .skill:nth-child(3n + 2) {
+  background: var(--color-accent-2);
+}
+
+.skills .skill:nth-child(3n + 3) {
+  background: var(--color-accent-3);
 }
 
 .links {
@@ -81,6 +94,7 @@
   color: black;
   outline: 3px solid black;
   outline-offset: -3px;
+  text-shadow: 2px 2px var(--color-text-primary);
 }
 
 @keyframes shake {
