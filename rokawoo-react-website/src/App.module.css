@@ -29,6 +29,7 @@
 }
   
 ::-webkit-scrollbar-track {
+    background: var(--color-dark);
     background: repeating-linear-gradient(
       45deg,
       var(--color-accent-1) 0 10%,
