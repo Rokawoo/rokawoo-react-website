@@ -21,22 +21,22 @@ export const About = () => {
             <li className={styles.aboutItem}>
               <img src={getImageUrl("about/cursorIcon.png")} alt="cursor-icon" draggable="false"/>
               <div className={styles.aboutItemText}>
-                <h3>Frontend Dev</h3>
-                <p>I am a Dev!</p>
+                <h3>Intro</h3>
+                <p>Placeholder</p>
               </div>
             </li>
             <li className={styles.aboutItem}>
               <img src={getImageUrl("about/serverIcon.png")} alt="server-icon" draggable="false"/>
               <div className={styles.aboutItemText}>
-                <h3>Backend Dev</h3>
-                <p>I am a Dev!</p>
+                <h3>Likes</h3>
+                <p>Placeholder</p>
               </div>
             </li>
             <li className={styles.aboutItem}>
               <img src={getImageUrl("about/uiIcon.png")} alt="ui-icon" draggable="false"/>
               <div className={styles.aboutItemText}>
-                <h3>Ui Dev</h3>
-                <p>I am a Dev!</p>
+                <h3>Dislikes</h3>
+                <p>Placeholder</p>
               </div>
             </li>
           </ul>

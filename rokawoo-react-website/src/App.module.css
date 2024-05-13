@@ -9,7 +9,7 @@
     background-color: var(--color-primary);
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection { /* For Firefox */
     color: var(--color-text-secondary);
     background: var(--color-light);
   }
