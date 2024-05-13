@@ -8,7 +8,7 @@ function setupTypewriter(t: HTMLElement): { type: () => void } {
       if (text[i] === " ") {
         typeSpeeds.push(0);
       } else {
-        typeSpeeds.push((Math.random() * 100) + 50); // Type dpeed
+        typeSpeeds.push((Math.random() * 100) + 50); // Type speed
       }
     }
   

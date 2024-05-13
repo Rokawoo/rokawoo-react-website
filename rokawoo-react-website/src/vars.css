@@ -1,7 +1,9 @@
 :root {
     /* Colors */
     --color-text-primary: #fff;
+    --color-text-primary-rgb: 255, 255, 255;
     --color-text-secondary: #000;
+    --color-text-secondary-rgb: 0, 0, 0;
 
     --color-primary: #000;
     --color-primary-rgb: 0, 0, 0;
@@ -25,5 +27,5 @@
     --color-bg: #000;
 
     /* Fonts */
-    --font-roboto: 'Comfortaa Variable';
+    --font-comfortaa: 'Comfortaa Variable';
 }

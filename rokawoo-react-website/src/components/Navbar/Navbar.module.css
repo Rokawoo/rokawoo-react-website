@@ -68,7 +68,9 @@
     align-self: center;
     margin-left: 0;
     margin-right: 0;
-    min-height: 100px;
+    text-align: center;
+    min-width: 100%;
+    min-height: 74px;
   }
 
   .menu {
@@ -101,8 +103,6 @@
       var(--color-accent-3) 40px,
       var(--color-accent-3) 60px
     ) 5;
-    
-
     border-radius: 10px;
     background: var(--color-primary);
     background: linear-gradient(

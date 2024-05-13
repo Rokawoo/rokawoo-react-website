@@ -4,6 +4,7 @@
 .backgroundColor {
   background-color: var(--color-secondary);
 }
+
 .container {
   color: var(--color-text-secondary);
   margin-top: 79px;
@@ -57,7 +58,7 @@
 
 .skill p {
   font-size: 25px;
-  font-family: var(--font-roboto);
+  font-family: var(--font-comfortaa);
   font-weight: 500;
 }
 
@@ -77,9 +78,11 @@
   background: var(--color-dark);
   background: linear-gradient(
     90deg,
-     var(--color-dark) 0%,
-    rgba(var(--color-dark-rgb), 0) 100%
-    );
+    rgba(var(--color-accent-1-rgb), 0.42) 0%,
+    rgba(var(--color-accent-2-rgb), 0.27) 33%,
+    rgba(var(--color-accent-3-rgb), 0.15) 66%,
+    rgba(var(--color-secondary-rgb), 0) 100%
+  );
   border-radius: 10px;
   padding: 24px;
 }
@@ -89,7 +92,7 @@
 }
 
 .historyItemDetails {
-  font-family: var(--font-roboto);
+  font-family: var(--font-comfortaa);
 }
 
 .historyItemDetails h3 {

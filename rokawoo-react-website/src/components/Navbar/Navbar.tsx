@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import TextScramble from "./scripts/text-scramble.ts";
+import { greetAgent } from "./scripts/greet-agent.ts";
 
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
@@ -12,10 +13,15 @@ export const Navbar = () => {
     useEffect(() => {
         if (titleRef.current) {
             textScramble = new TextScramble(titleRef.current as HTMLElement, [
+                'Hοmε Ιs Α Hουsε Wιth Α Hεαrτ',
               'Wεlcοmε Tο Μγ Rοκαspacε <3',
-              'Hοmε Ιs Α Hουsε Wιth Α Hεαrτ',
               'Ι\'m Jυsτ Sο Hαppγ Tο Sεε Υου'
             ]);
+        }
+
+        const title = greetAgent();
+        if (titleRef.current) {
+            titleRef.current.innerText = title;
         }
 
         return () => {
@@ -29,7 +35,7 @@ export const Navbar = () => {
         <div className={styles.backgroundColor}>
             <nav className={styles.navbar}>
                 <a ref={titleRef} className={styles.title} href="/">
-                    Welcome to Rokaspace
+                    Loading...
                 </a>
                 <div className={styles.menu}>
                     <img
