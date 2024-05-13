@@ -15,6 +15,30 @@
   max-width: 345px;
 }
 
+.container:nth-child(odd) {  
+  background: linear-gradient(
+  180deg,
+  var(--color-accent-1) 0%,
+  var(--color-secondary) 100%
+  );
+}
+
+.container:nth-child(even) {  
+  background: linear-gradient(
+  180deg,
+  var(--color-accent-2) 0%,
+  var(--color-secondary) 100%
+  );
+}
+
+.container:nth-child(3n) {  
+  background: linear-gradient(
+  180deg,
+  var(--color-accent-3) 0%,
+  var(--color-secondary) 100%
+  );
+}
+
 .img {
   margin-bottom: 26px;
 }
