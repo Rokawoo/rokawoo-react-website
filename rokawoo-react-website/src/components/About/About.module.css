@@ -44,7 +44,7 @@
   border-radius: 20px;
   background: var(--color-primary);
   padding: 20px 74px 20px 20px;
-  border: 2px solid white;
+  border: 2px solid var(--color-secondary);
 }
 
 .aboutItems::before {
@@ -55,7 +55,7 @@
   transform: translateY(-50%) rotate(90deg);
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #fff;
+  border-top: 20px solid var(--color-secondary);
 }
 
 .aboutItem {
@@ -121,6 +121,20 @@
 
   .aboutImage {
     max-width: 100%;
+  }
+
+  .aboutItmes{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .aboutItems::before {
+    top: -10px;
+    left: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--color-secondary);
   }
 
   .aboutItem {
