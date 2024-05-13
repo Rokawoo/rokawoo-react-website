@@ -29,7 +29,7 @@
   font-weight: 900;
   margin-top: 230px;
   margin-bottom: 33px;
-  font-family: var(--font-roboto);
+  font-family: var(--font-comfortaa);
   background: linear-gradient(
     90deg,
     rgba(var(--color-text-secondary-rgb), 1) 70%,
@@ -45,7 +45,7 @@
 
 .description {
   font-size: 30px;
-  font-family: var(--font-roboto);
+  font-family: var(--font-comfortaa);
   margin-bottom: 52px;
   min-height: 230px;
 }
