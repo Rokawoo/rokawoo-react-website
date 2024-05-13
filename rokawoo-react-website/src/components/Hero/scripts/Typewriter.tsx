@@ -10,7 +10,7 @@ const Typewriter: React.FC = () => {
     name: 'Roka',
     age: '19',
     location: 'Philadelphia, PA',
-    properties:['he', 'they', 'UTC-04:00']
+    properties: ['he', 'they', 'UTC-04:00']
 };`;
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Typewriter: React.FC = () => {
   const highlightRanges = useMemo(() => ({
     var: new Set([0, 1, 2]),
     key: new Map([[19, 22], [36, 39], [52, 59], [86, 95]]),
-    string: new Map([[25, 30], [42, 45], [62, 79], [98, 101], [104, 109], [112, 122]])
+    string: new Map([[25, 30], [42, 45], [62, 79], [99, 102], [105, 110], [113, 123]])
   }), []);
 
   const getHighlightClass = useMemo(() => {
