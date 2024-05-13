@@ -10,7 +10,7 @@ const Typewriter: React.FC = () => {
     name: 'Roka',
     age: '19',
     location: 'Philadelphia, PA',
-    properties:['he', 'cool', 'UTC-04:00']
+    properties:['he', 'they', 'UTC-04:00']
 };`;
 
   useEffect(() => {
