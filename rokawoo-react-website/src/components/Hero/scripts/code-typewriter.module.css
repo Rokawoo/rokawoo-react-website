@@ -17,8 +17,8 @@
   margin: 0;
   font-family: "Courier New";
 }
-#typewriter:after {
-  content: "|";
+
+.cursor {
   -webkit-animation: blink 500ms linear infinite alternate;
           animation: blink 500ms linear infinite alternate;
 }
