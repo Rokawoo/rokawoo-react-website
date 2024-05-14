@@ -29,7 +29,9 @@ export const About = () => {
               <img src={getImageUrl("about/serverIcon.png")} alt="server-icon" draggable="false"/>
               <div className={styles.aboutItemText}>
                 <h3>Likes</h3>
-                <p>Placeholder</p>
+                <p>Placeholder
+                Placeholder
+                </p>
               </div>
             </li>
             <li className={styles.aboutItem}>

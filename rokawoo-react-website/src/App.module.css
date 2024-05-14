@@ -23,8 +23,9 @@
 }
   
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: rgb(100, 100, 100);
     border-radius: 5px;
+
 }
   
 ::-webkit-scrollbar-track {
