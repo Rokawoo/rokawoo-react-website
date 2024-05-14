@@ -42,8 +42,8 @@ export const Navbar = () => {
                         className={styles.menuBtn}
                         src={
                             menuOpen
-                                ? getImageUrl("nav/closeIcon.png")
-                                : getImageUrl("nav/menuIcon.png")
+                                ? getImageUrl("nav/closeIcon.webp")
+                                : getImageUrl("nav/menuIcon.webp")
                         }
                         alt="menu-button"
                         draggable="false"

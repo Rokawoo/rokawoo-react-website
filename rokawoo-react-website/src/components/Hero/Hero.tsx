@@ -23,7 +23,7 @@ export const Hero = () => {
             */}
           </div>
           <img
-            src={getImageUrl("hero/heroImage.png")}
+            src={getImageUrl("hero/heroImage.webp")}
             alt="rokawoo-mascot-hero"
             className={styles.heroImg}
             draggable="false"

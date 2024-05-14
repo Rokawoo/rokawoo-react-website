@@ -15,14 +15,14 @@ export const Contact = () => {
         <ul className={styles.links}>
           <li className={styles.link}>
             <img 
-              src={getImageUrl("contact/emailIcon.png")}
+              src={getImageUrl("contact/emailIcon.webp")}
               alt="email-icon" 
               draggable="false"/>
             <a href="mailto:ays36@drexel.edu">myemail@email.com</a>
           </li>
           <li className={styles.link}>
             <img
-              src={getImageUrl("contact/linkedinIcon.png")}
+              src={getImageUrl("contact/linkedinIcon.webp")}
               alt="linkedin-icon"
               draggable="false"
             />
@@ -30,7 +30,7 @@ export const Contact = () => {
           </li>
           <li className={styles.link}>
             <img 
-              src={getImageUrl("contact/githubIcon.png")}
+              src={getImageUrl("contact/githubIcon.webp")}
               alt="github-icon"
               draggable="false"
             />

@@ -1,26 +1,58 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "title": "Kerfus Tutor",
+    "imageSrc": "projects/project.webp",
+    "description": "An interactive AI tutor that adapts to you! Leveraging AI for the Common Good - Philly Codefest 2024",
     "skills": ["React", "Express", "Node"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "rokawoo-react-website",
+    "imageSrc": "projects/project.webp",
+    "description": "Simply purrfect~! 🐈",
+    "skills": ["react", "website", "reactive", "cute", "TypeScript"],
+    "demo": "w",
+    "source": "w"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Neocities",
+    "imageSrc": "projects/project.webp",
+    "description": "My website!! 💖🐈",
+    "skills": ["website", "anime", "neocities", "cute", "HTML"],
+    "demo": "w",
+    "source": "w"
+  },
+  {
+    "title": "dir-lister-inventory",
+    "imageSrc": "projects/project.webp",
+    "description": "Where did I put it again?",
+    "skills": ["xml", "inventory", "school-project", "bash-script", "dir"],
+    "demo": "w",
+    "source": "w"
+  },
+  {
+    "title": "banking-system",
+    "imageSrc": "projects/project.webp",
+    "description": "Get your money up not your funny up!! 📢💸",
+    "skills": ["school-project", "banking-system", "Java"],
+    "demo": "w",
+    "source": "w"
+  },
+  {
+    "title": "security-training-enforcement-system",
+    "imageSrc": "projects/project.webp",
+    "description": "System to automate Security Training Enforcement record keeping",
+    "skills": ["filesystem", "regex", "file", "Python"],
+    "demo": "w",
+    "source": "w"
+  },
+  {
+    "title": "wall-ball-game",
+    "imageSrc": "projects/project.webp",
+    "description": "The name is kind of self explanatory...",
+    "skills": ["game", "pygame", "ball", "silly-project", "Python"],
+    "demo": "w",
+    "source": "w"
   }
 ]
