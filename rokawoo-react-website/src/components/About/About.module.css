@@ -96,8 +96,15 @@
 
 .aboutItem:hover {
   background-size: 100% 100%;
+}
+
+.aboutItem:hover .aboutItemText {
   text-shadow: 2px 2px 4px var(--color-text-secondary);
-  text-indent: 5%;
+  transform: translateX(5%);
+}
+
+.aboutItemText {
+  transition: 0.4s;
 }
 
 .aboutItem h3 {

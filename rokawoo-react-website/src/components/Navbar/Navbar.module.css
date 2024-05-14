@@ -49,12 +49,11 @@
 
 .menuItem:hover {
   color: var(--color-light);
-  text-indent: 5%;
   text-shadow: 2px 2px 4px rgba(var(--color-light-rgb), 0.6);
   text-decoration: underline;
   font-size: 1.1em;
   font-weight: 500;
-  transform: translateY(-2px);
+  transform: translateY(-2px) translateX(5%);
 }
 
 .menuItem:hover:nth-child(odd) {
@@ -135,7 +134,7 @@
   }
 
   .menuItem:hover {
-    text-indent: 0%;
+    transform: translateY(-2px);
   }
 
   .menuOpen {
