@@ -51,6 +51,7 @@
   color: var(--color-light);
   text-shadow: 2px 2px 4px rgba(var(--color-light-rgb), 0.6);
   text-decoration: underline;
+  text-decoration-thickness: 0.14em; 
   font-size: 1.1em;
   font-weight: 500;
   transform: translateY(-2px) translateX(5%);
