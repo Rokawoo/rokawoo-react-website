@@ -4,7 +4,7 @@
     "imageSrc": "projects/project.webp",
     "description": "An interactive AI tutor that adapts to you! Leveraging AI for the Common Good - Philly Codefest 2024",
     "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
+    "demo": null,
     "source": "https://www.github.com"
   },
   {
@@ -12,7 +12,7 @@
     "imageSrc": "projects/project.webp",
     "description": "Simply purrfect~! 🐈",
     "skills": ["react", "website", "reactive", "cute", "TypeScript"],
-    "demo": "w",
+    "demo": null,
     "source": "w"
   },
   {
@@ -20,7 +20,7 @@
     "imageSrc": "projects/project.webp",
     "description": "My website!! 💖🐈",
     "skills": ["website", "anime", "neocities", "cute", "HTML"],
-    "demo": "w",
+    "demo": null,
     "source": "w"
   },
   {
@@ -28,7 +28,7 @@
     "imageSrc": "projects/project.webp",
     "description": "Where did I put it again?",
     "skills": ["xml", "inventory", "school-project", "bash-script", "dir"],
-    "demo": "w",
+    "demo": null,
     "source": "w"
   },
   {
@@ -36,7 +36,7 @@
     "imageSrc": "projects/project.webp",
     "description": "Get your money up not your funny up!! 📢💸",
     "skills": ["school-project", "banking-system", "Java"],
-    "demo": "w",
+    "demo": null,
     "source": "w"
   },
   {
@@ -44,7 +44,7 @@
     "imageSrc": "projects/project.webp",
     "description": "System to automate Security Training Enforcement record keeping",
     "skills": ["filesystem", "regex", "file", "Python"],
-    "demo": "w",
+    "demo": null,
     "source": "w"
   },
   {
@@ -52,7 +52,7 @@
     "imageSrc": "projects/project.webp",
     "description": "The name is kind of self explanatory...",
     "skills": ["game", "pygame", "ball", "silly-project", "Python"],
-    "demo": "w",
+    "demo": null,
     "source": "w"
   }
 ]
