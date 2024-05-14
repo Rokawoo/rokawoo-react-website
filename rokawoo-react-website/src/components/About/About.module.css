@@ -7,13 +7,12 @@
 
 .container {
   position: relative;
+  z-index: 1;
   /* background-color: rgba(12, 12, 12, 0.6); */
   border-radius: 15px;
-  padding: 73px;
-  margin-top: 0px;
-  z-index: 1;
-  margin: 10%;
-  margin-right: 10%;
+  padding-left: 73px;
+  padding-right: 73px;
+  margin: 129px 10% 60px;
 }
 
 .title {
@@ -112,6 +111,7 @@
 @media screen and (max-width: 1080px) {
   .container {
     background-color: transparent;
+    margin-top: 90px;
     padding-left: 0;
     padding-right: 0;
   }

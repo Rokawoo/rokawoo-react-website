@@ -9,13 +9,12 @@
   box-shadow: 0 2px 8px -2px var(--color-secondary);
   padding: 18px 24px;
   max-width: 345px;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .container:hover {
   transform: scale(1.01);
 }
-
 
 .container:nth-child(odd) {  
   background: linear-gradient(
