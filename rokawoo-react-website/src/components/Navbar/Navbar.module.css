@@ -50,11 +50,31 @@
 .menuItem:hover {
   color: var(--color-light);
   text-indent: 5%;
-  text-shadow: 2px 2px 4px rgba(var(--color-light-rgb), 0.65);
+  text-shadow: 2px 2px 4px rgba(var(--color-light-rgb), 0.6);
   text-decoration: underline;
   font-size: 1.1em;
   font-weight: 500;
   transform: translateY(-2px);
+}
+
+.menuItem:hover:nth-child(odd) {
+  color: var(--color-accent-1);
+  text-shadow: 2px 2px 4px rgba(var(--color-accent-1-rgb), 0.6);
+}
+
+.menuItem:hover:nth-child(even) {
+  color: var(--color-accent-2);
+  text-shadow: 2px 2px 4px rgba(var(--color-accent-2-rgb), 0.6);
+}
+
+.menuItem:hover:nth-child(3n) {
+  color: var(--color-accent-3);
+  text-shadow: 2px 2px 4px rgba(var(--color-accent-3-rgb), 0.6);
+}
+
+.menuItem:hover:nth-child(4n) {
+  color: var(--color-secondary);
+  text-shadow: 2px 2px 4px rgba(var(--color-secondary-rgb), 0.6);
 }
 
 @media screen and (max-width: 1080px) {

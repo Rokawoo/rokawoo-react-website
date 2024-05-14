@@ -1,35 +1,45 @@
-function setupTypewriter(t: HTMLElement): { type: () => void } {
-    const text: string = t.textContent || "";
-    t.textContent = "";
-    let cursorPosition: number = 0;
-    let typeSpeeds: number[] = [];
-  
-    for (let i = 0; i < text.length; i++) {
+function setupTypewriter(t: HTMLElement, text: string): { type: () => void } {
+  t.textContent = "";
+
+  const typeSpeeds: number[] = [];
+  const fragment = document.createDocumentFragment();
+
+  for (let i = 0; i < text.length; i++) {
+      const span = document.createElement('span');
+      span.textContent = text[i];
+      fragment.appendChild(span);
       if (text[i] === " ") {
-        typeSpeeds.push(0);
+          typeSpeeds.push(0);
       } else {
-        typeSpeeds.push((Math.random() * 100) + 50); // Type speed
+          typeSpeeds.push((Math.random() * 100) + 50); // Typing Speed
       }
-    }
-  
-    const type = (): void => {
-      t.textContent += text[cursorPosition];
+  }
+
+  t.appendChild(fragment);
+
+  const type = (): void => {
+      const spans = t.querySelectorAll('span');
+      spans[cursorPosition].classList.add('typed');
       cursorPosition += 1;
-  
+
       if (cursorPosition < text.length) {
-        setTimeout(type, typeSpeeds[cursorPosition]);
+          setTimeout(type, typeSpeeds[cursorPosition]);
       }
-    };
-  
-    return {
+  };
+
+  let cursorPosition: number = 0;
+
+  return {
       type: type
-    };
-  }
-  
-  const typewriter: HTMLElement | null = document.getElementById('typewriter');
-  
-  if (typewriter !== null) {
-    const typewriterInstance = setupTypewriter(typewriter);
-    typewriterInstance.type();
-  }
-  
+  };
+}
+
+const typewriterElement: HTMLElement | null = document.getElementById('typewriter');
+
+if (typewriterElement !== null && typewriterElement instanceof HTMLElement) {
+  const text = typewriterElement.textContent || "";
+  const typewriterInstance = setupTypewriter(typewriterElement, text);
+  typewriterInstance.type();
+} else {
+  console.error("Typewriter element not found or not an HTMLElement.");
+}

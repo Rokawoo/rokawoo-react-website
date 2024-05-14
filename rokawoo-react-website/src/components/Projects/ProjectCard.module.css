@@ -5,14 +5,34 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background: linear-gradient(
-    180deg,
-    var(--color-dark) 0%,
-    var(--color-secondary) 100%
-  );
-  box-shadow: 0 16px 14px 0 var(--color-bg);
+  background: var(--color-dark);
+  box-shadow: 0 2px 8px -2px var(--color-secondary);
   padding: 18px 24px;
   max-width: 345px;
+}
+
+.container:nth-child(odd) {  
+  background: linear-gradient(
+  180deg,
+  var(--color-accent-1) 0%,
+  var(--color-secondary) 100%
+  );
+}
+
+.container:nth-child(even) {  
+  background: linear-gradient(
+  180deg,
+  var(--color-accent-2) 0%,
+  var(--color-secondary) 100%
+  );
+}
+
+.container:nth-child(3n) {  
+  background: linear-gradient(
+  180deg,
+  var(--color-accent-3) 0%,
+  var(--color-secondary) 100%
+  );
 }
 
 .img {
@@ -85,6 +105,7 @@
 .link:hover {
   transform: translateY(-2px) rotate(-2deg);
   animation: shake 0.5s ease-in-out infinite;
+  background: var(--color-dark);
   background: repeating-linear-gradient(
     45deg,
     var(--color-accent-1) 0 20%,

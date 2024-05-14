@@ -30,6 +30,7 @@
   margin-top: 230px;
   margin-bottom: 33px;
   font-family: var(--font-comfortaa);
+  background: var(--color-text-primary);
   background: linear-gradient(
     90deg,
     rgba(var(--color-text-secondary-rgb), 1) 70%,
