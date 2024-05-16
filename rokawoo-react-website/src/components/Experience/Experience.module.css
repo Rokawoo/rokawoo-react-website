@@ -55,6 +55,11 @@
 
 .skillImgContainer img {
   width: 75px;
+  transition: transform 0.5s ease-in;
+}
+
+.skillImgContainer:hover img {
+  transform: rotate(360deg);
 }
 
 .skill p {
