@@ -3,7 +3,20 @@ import React from "react";
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 
-export const ProjectCard = ({
+interface Project {
+  title: string;
+  imageSrc: string;
+  description: string;
+  skills: string[];
+  demo?: string;
+  source: string;
+}
+ 
+interface ProjectCardProps {
+  project: Project;
+}
+ 
+export const ProjectCard: React.FC<ProjectCardProps> = ({
   project: { title, imageSrc, description, skills, demo, source },
 }) => {
   return (
