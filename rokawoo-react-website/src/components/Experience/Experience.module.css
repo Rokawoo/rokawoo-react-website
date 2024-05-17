@@ -55,11 +55,16 @@
 
 .skillImgContainer img {
   width: 75px;
-  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.skillImgContainer:hover img {
-  transform: rotate(360deg);
+.skillImgContainer img.animated {
+  animation: spin 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .skill p {
