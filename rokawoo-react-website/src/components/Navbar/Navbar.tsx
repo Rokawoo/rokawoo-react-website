@@ -12,24 +12,23 @@ export const Navbar = () => {
 
     useEffect(() => {
         if (titleRef.current) {
-            textScramble = new TextScramble(titleRef.current as HTMLElement, [
+            const textScramble = new TextScramble(titleRef.current as HTMLElement, [
                 'Hοmε Ιs Α Hουsε Wιth Α Hεαrτ',
                 'Wεlcοmε Tο Μγ Rοκαspacε <3',
                 'Ι\'m Jυsτ Sο Hαppγ Tο Sεε Υου'
             ]);
-        }
 
-        const title = greetAgent();
-        if (titleRef.current) {
+            const title = greetAgent();
             titleRef.current.innerText = title;
-        }
 
-        return () => {
-            if (textScramble) {
-                textScramble.setText(titleRef.current?.textContent || "Welcome to Rokaspace");
-            }
-        };
+            return () => {
+                if (textScramble) {
+                    textScramble.setText(titleRef.current?.textContent || "Welcome to Rokaspace");
+                }
+            };
+        }
     }, []);
+
 
     return (
         <div className={styles.backgroundColor}>
