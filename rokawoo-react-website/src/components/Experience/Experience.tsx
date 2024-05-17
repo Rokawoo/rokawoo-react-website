@@ -29,9 +29,9 @@ export const Experience = () => {
                   <img
                       src={getImageUrl(skill.imageSrc)}
                       alt={skill.title}
-                      draggable="false"
                       className={animatedSkills[id] ? styles.animated : ""}
-                    />
+                      draggable="false"
+                  />
                   </div>
                   <p>{skill.title}</p>
                 </div>
