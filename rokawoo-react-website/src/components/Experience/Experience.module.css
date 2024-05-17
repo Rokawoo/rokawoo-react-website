@@ -6,6 +6,7 @@
 }
 
 .container {
+
   color: var(--color-text-secondary);
   margin-top: 79px;
   margin-left: 10%;
@@ -14,11 +15,13 @@
 }
 
 .title {
+  position: relative;
   color: var(--color-text-secondary);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  z-index: 10;
 }
 
 .content {

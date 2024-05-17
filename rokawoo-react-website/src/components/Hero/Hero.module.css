@@ -25,6 +25,7 @@
 }
 
 .title {
+  position: relative;
   font-size: 72px;
   font-weight: 900;
   margin-top: 210px;

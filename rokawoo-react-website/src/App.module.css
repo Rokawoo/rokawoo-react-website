@@ -33,8 +33,8 @@
     background: repeating-linear-gradient(
       45deg,
       var(--color-accent-1) 0 10%,
-      var(--color-accent-2) 0 20%,
-      var(--color-accent-3) 0 30%
+      var(--color-accent-3) 0 20%,
+      var(--color-accent-2) 0 30%
     );
   }
 
