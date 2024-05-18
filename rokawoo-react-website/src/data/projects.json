@@ -1,27 +1,35 @@
 [
   {
+    "title": "VRChAI (Roka AI)",
+    "imageSrc": "projects/project.webp",
+    "description": "Interactive chat AI featuring advanced context awareness, including visual and auditory abilities. Hosted on VrChat.",
+    "skills": ["VR Chat", "OpenAI", "Computer Vision"],
+    "demo": null,
+    "source": "https://gitlab.com/example"
+  },
+  {
     "title": "Kerfus Tutor",
     "imageSrc": "projects/project.webp",
-    "description": "An interactive AI tutor that adapts to individual learning styles; Leveraging AI for the Common Good.",
+    "description": "An interactive AI tutor that adapts to individual learning styles; Leveraging AI for the Common Good. ",
     "skills": ["OpenAI", "STT/TTS", "Philly Codefest 2024"],
     "demo": null,
-    "source": "https://www.github.com"
+    "source": "https://github.com/Rokawoo/kerfus-tutor"
   },
   {
-    "title": "Rokawoo Landing Page",
+    "title": "Neocities Landing Page",
     "imageSrc": "projects/project.webp",
-    "description": "My website!! 💖🐈",
-    "skills": ["website", "anime", "neocities", "cute", "HTML"],
-    "demo": null,
-    "source": "w"
+    "description": "A hub for all of my web-dev projects, both new and old, featuring custom elements. Hosted on Neocities.",
+    "skills": ["Neocities", "HTML", "CSS", "Javascript"],
+    "demo": "https://rokawoo.neocities.org/",
+    "source": "https://github.com/Rokawoo/neocities"
   },
   {
-    "title": "Rokawoo.com",
+    "title": "Rokawoo React Site",
     "imageSrc": "projects/project.webp",
     "description": "A personal portfolio website showcasing my interests and projects, built with React. You're viewing it right now!",
     "skills": ["React", "HTML", "CSS", "TypeScript"],
-    "demo": null,
-    "source": "https://www.rokawoo.com"
+    "demo": "https://www.rokawoo.com",
+    "source": "https://github.com/Rokawoo/rokawoo-react-website"
   },
   {
     "title": "dir-lister-inventory",
@@ -32,15 +40,7 @@
     "source": "w"
   },
   {
-    "title": "banking-system",
-    "imageSrc": "projects/project.webp",
-    "description": "Get your money up not your funny up!! 📢💸",
-    "skills": ["school-project", "banking-system", "Java"],
-    "demo": null,
-    "source": "w"
-  },
-  {
-    "title": "security-training-enforcement-system",
+    "title": "Certificate Record Logger",
     "imageSrc": "projects/project.webp",
     "description": "System to automate Security Training Enforcement record keeping",
     "skills": ["filesystem", "regex", "file", "Python"],
@@ -48,7 +48,7 @@
     "source": "w"
   },
   {
-    "title": "wall-ball-game",
+    "title": "Wall & Ball Game",
     "imageSrc": "projects/project.webp",
     "description": "The name is kind of self explanatory...",
     "skills": ["game", "pygame", "ball", "silly-project", "Python"],
