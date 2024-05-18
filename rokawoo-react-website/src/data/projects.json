@@ -26,8 +26,8 @@
   {
     "title": "Wall & Ball Game",
     "imageSrc": "projects/project.webp",
-    "description": "The name is kind of self explanatory...",
-    "skills": ["game", "pygame", "ball", "silly-project", "Python"],
+    "description": "Enter a philosophical conundrum where you are your worst opponent in the style of a retro pong game.",
+    "skills": ["Game Dev", "OPP", "Pygame", "Python"],
     "demo": null,
     "source": "https://github.com/Rokawoo/wall-ball-game"
   },
@@ -59,7 +59,7 @@
     "title": "Certificate Record Logger",
     "imageSrc": "projects/project.webp",
     "description": "Automated system for Security Training Enforcement record keeping. Verification and filesystem operations.",
-    "skills": ["RegEx", "Logging", "Data Scraping"],
+    "skills": ["RegEx", "Logging", "Data Scraping", "Sys"],
     "demo": null,
     "source": "https://github.com/Rokawoo/security-training-enforcement-system"
   }
