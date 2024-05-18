@@ -1,19 +1,35 @@
 [
   {
+    "title": "Cybernetic Automata",
+    "imageSrc": "projects/project.webp",
+    "description": "Exploring Dr. Brian L. Stuart's Cybernetic Automata to simulate natural intelligence. STAR Scholars 2023",
+    "skills": ["Research Study", "AI", "Experiment/Simulation"],
+    "demo": null, 
+    "source": "https://gitlab.com/example"
+  },  
+  {
     "title": "VRChAI (Roka AI)",
     "imageSrc": "projects/project.webp",
     "description": "Interactive chat AI featuring advanced context awareness, including visual and auditory abilities. Hosted on VrChat.",
-    "skills": ["VR Chat", "OpenAI", "Computer Vision"],
+    "skills": ["OpenAI", "UDP/OSC", "Computer Vision"],
     "demo": null,
     "source": "https://gitlab.com/example"
   },
   {
     "title": "Kerfus Tutor",
     "imageSrc": "projects/project.webp",
-    "description": "An interactive AI tutor that adapts to individual learning styles; Leveraging AI for the Common Good. ",
+    "description": "An interactive AI tutor that adapts to individual learning styles; AI for the Common Good; Philly Codefest '24.",
     "skills": ["OpenAI", "STT/TTS", "Philly Codefest 2024"],
     "demo": null,
     "source": "https://github.com/Rokawoo/kerfus-tutor"
+  },
+  {
+    "title": "Wall & Ball Game",
+    "imageSrc": "projects/project.webp",
+    "description": "The name is kind of self explanatory...",
+    "skills": ["game", "pygame", "ball", "silly-project", "Python"],
+    "demo": null,
+    "source": "https://github.com/Rokawoo/wall-ball-game"
   },
   {
     "title": "Neocities Landing Page",
@@ -32,27 +48,19 @@
     "source": "https://github.com/Rokawoo/rokawoo-react-website"
   },
   {
-    "title": "dir-lister-inventory",
+    "title": "Drexel Recommender",
     "imageSrc": "projects/project.webp",
-    "description": "Where did I put it again?",
-    "skills": ["xml", "inventory", "school-project", "bash-script", "dir"],
+    "description": "Designed and developed a unique web application with custom sorting algorithms and an AI shopping assistant.",
+    "skills": ["Fullstack", "UI/UX", "Chat AI Integration"],
     "demo": null,
     "source": "w"
-  },
+  },  
   {
     "title": "Certificate Record Logger",
     "imageSrc": "projects/project.webp",
-    "description": "System to automate Security Training Enforcement record keeping",
-    "skills": ["filesystem", "regex", "file", "Python"],
+    "description": "Automated system for Security Training Enforcement record keeping. Verification and filesystem operations.",
+    "skills": ["RegEx", "Logging", "Data Scraping"],
     "demo": null,
-    "source": "w"
-  },
-  {
-    "title": "Wall & Ball Game",
-    "imageSrc": "projects/project.webp",
-    "description": "The name is kind of self explanatory...",
-    "skills": ["game", "pygame", "ball", "silly-project", "Python"],
-    "demo": null,
-    "source": "w"
+    "source": "https://github.com/Rokawoo/security-training-enforcement-system"
   }
 ]
