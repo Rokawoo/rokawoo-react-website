@@ -51,7 +51,7 @@
     "title": "Drexel Recommender",
     "imageSrc": "projects/project.webp",
     "description": "Designed and developed a unique web application with custom sorting algorithms and an AI shopping assistant.",
-    "skills": ["Fullstack", "UI/UX", "Chat AI Integration"],
+    "skills": ["Fullstack", "UI/UX", "Prompt Engineering"],
     "demo": null,
     "source": "w"
   },  

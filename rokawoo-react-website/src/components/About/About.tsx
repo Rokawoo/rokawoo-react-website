@@ -21,15 +21,15 @@ export const About = () => {
             <li className={styles.aboutItem}>
               <img src={getImageUrl("about/cursorIcon.webp")} alt="cursor-icon" draggable="false"/>
               <div className={styles.aboutItemText}>
-                <h3>Intro</h3>
-                <p>Placeholder</p>
+                <h3>Hiya!</h3>
+                <p>I'm Roka; Honors Computer Science Student @ Drexel University.<br />My interestes mainly revolve AI, but web-dev is just so much fun.</p>
               </div>
             </li>
             <li className={styles.aboutItem}>
               <img src={getImageUrl("about/serverIcon.webp")} alt="server-icon" draggable="false"/>
               <div className={styles.aboutItemText}>
                 <h3>Likes</h3>
-                <p>Placeholder waewae  aweawe<br />Placeholder</p>
+                <p>Anime: Evangelion, SE Lain, Elfen Lied, Japari, FLCL, Soul Eater…<br />Games:  </p>
               </div>
             </li>
             <li className={styles.aboutItem}>
