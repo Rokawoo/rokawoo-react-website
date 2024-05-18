@@ -2,26 +2,26 @@
   {
     "title": "Kerfus Tutor",
     "imageSrc": "projects/project.webp",
-    "description": "An interactive AI tutor that adapts to you! Leveraging AI for the Common Good - Philly Codefest 2024",
-    "skills": ["React", "Express", "Node"],
+    "description": "An interactive AI tutor that adapts to individual learning styles; Leveraging AI for the Common Good.",
+    "skills": ["OpenAI", "STT/TTS", "Philly Codefest 2024"],
     "demo": null,
     "source": "https://www.github.com"
   },
   {
-    "title": "rokawoo-react-website",
-    "imageSrc": "projects/project.webp",
-    "description": "Simply purrfect~! 🐈",
-    "skills": ["react", "website", "reactive", "cute", "TypeScript"],
-    "demo": null,
-    "source": "w"
-  },
-  {
-    "title": "Neocities",
+    "title": "Rokawoo Landing Page",
     "imageSrc": "projects/project.webp",
     "description": "My website!! 💖🐈",
     "skills": ["website", "anime", "neocities", "cute", "HTML"],
     "demo": null,
     "source": "w"
+  },
+  {
+    "title": "Rokawoo.com",
+    "imageSrc": "projects/project.webp",
+    "description": "A personal portfolio website showcasing my interests and projects, built with React. You're viewing it right now!",
+    "skills": ["React", "HTML", "CSS", "TypeScript"],
+    "demo": null,
+    "source": "https://www.rokawoo.com"
   },
   {
     "title": "dir-lister-inventory",

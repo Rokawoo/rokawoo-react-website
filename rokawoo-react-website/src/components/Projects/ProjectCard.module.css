@@ -16,27 +16,27 @@
   transform: scale(1.01);
 }
 
-.container:nth-child(odd) {  
+.container:nth-child(3n + 1) {  
   background: linear-gradient(
-  180deg,
-  var(--color-accent-1) 0%,
-  var(--color-secondary) 100%
+    180deg,
+    var(--color-accent-1) 0%,
+    var(--color-secondary) 100%
   );
 }
 
-.container:nth-child(even) {  
+.container:nth-child(3n + 2) {  
   background: linear-gradient(
-  180deg,
-  var(--color-accent-2) 0%,
-  var(--color-secondary) 100%
+    180deg,
+    var(--color-accent-2) 0%,
+    var(--color-secondary) 100%
   );
 }
 
-.container:nth-child(3n) {  
+.container:nth-child(3n + 3) {  
   background: linear-gradient(
-  180deg,
-  var(--color-accent-3) 0%,
-  var(--color-secondary) 100%
+    180deg,
+    var(--color-accent-3) 0%,
+    var(--color-secondary) 100%
   );
 }
 
@@ -53,7 +53,7 @@
 .description {
   margin-top: 6px;
   color: var(--color-text-secondary);
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -77,7 +77,7 @@
   padding: 2px 22px;
 }
 
-.skills .skill {
+.skills .skill:nth-child(3n + 1) {
   background: var(--color-accent-1);
 }
 
