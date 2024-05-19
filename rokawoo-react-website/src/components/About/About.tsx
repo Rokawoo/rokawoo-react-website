@@ -1,9 +1,18 @@
 import React from "react";
 
-import styles from "./About.module.css"
+import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
+import { useBounceClickAnimation } from "./scripts/bounce-click-animation";
 
 export const About = () => {
+  const audioSrc = getImageUrl("audio/clickSound.mp3");
+  const {
+    isAnimated,
+    handleHover,
+    handleAnimationEnd,
+    handleClick
+  } = useBounceClickAnimation(audioSrc);
+
   return (
     <div className={styles.backgroundColor}>
       <div className={`${styles.wave} ${styles.secondary}`}></div>
@@ -12,10 +21,13 @@ export const About = () => {
         <h2 className={styles.title}>About</h2>
         <div className={styles.content}>
           <img 
-          src={getImageUrl("about/aboutImage.webp")}
-          alt="rokawoo-mascot-about-me"
-          className={styles.aboutImg}
-          draggable="false"
+            src={getImageUrl("about/aboutImage.webp")}
+            alt="rokawoo-mascot-about-me"
+            className={`${styles.aboutImg} ${isAnimated ? styles.animated : ""}`}
+            onMouseEnter={handleHover}
+            onAnimationEnd={handleAnimationEnd}
+            onClick={handleClick}
+            draggable="false"
           />
           <ul className={styles.aboutItems}>
             <li className={styles.aboutItem}>
