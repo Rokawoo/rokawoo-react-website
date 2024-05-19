@@ -1,10 +1,13 @@
 import React from "react";
 
 import styles from "./Experience.module.css";
+
 import skills from "../../data/skills.json";
 import history from "../../data/history.json";
+
 import { getAssetUrl } from "../../utils";
 import { useSpinAnimation } from "./scripts/spin-animation";
+
 
 export const Experience = () => {
   const { animatedSkills, handleHover, handleAnimationEnd } = useSpinAnimation(skills);

@@ -1,14 +1,16 @@
 import React from "react";
 
 import styles from "./ProjectCard.module.css";
+
 import { getAssetUrl } from "../../utils";
+
 
 interface Project {
   title: string;
   imageSrc: string;
   description: string;
   skills: string[];
-  demo?: string;
+  demo?: string | null;
   source: string;
 }
  

@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 
+import styles from "./Navbar.module.css";
+
 import TextScramble from "./scripts/text-scramble.ts";
+
+import { getAssetUrl } from "../../utils";
 import { greetAgent } from "./scripts/greet-agent.ts";
 
-import styles from "./Navbar.module.css";
-import { getAssetUrl } from "../../utils";
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const titleRef = useRef<HTMLAnchorElement>(null);
-    let textScramble: TextScramble | null = null;
 
     useEffect(() => {
         if (titleRef.current) {
@@ -40,15 +41,12 @@ export const Navbar = () => {
                 <div className={styles.menu}>
                     <img
                         className={styles.menuBtn}
-                        src={
-                            menuOpen
-                                ? getAssetUrl("nav/closeIcon.webp")
-                                : getAssetUrl("nav/menuIcon.webp")
-                        }
+                        src={menuOpen
+                            ? getAssetUrl("nav/closeIcon.webp")
+                            : getAssetUrl("nav/menuIcon.webp")}
                         alt="menu-button"
                         draggable="false"
-                        onClick={() => setMenuOpen(!menuOpen)}
-                    />
+                        onClick={() => setMenuOpen(!menuOpen)} />
                     <ul
                         className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
                         onClick={() => setMenuOpen(false)}

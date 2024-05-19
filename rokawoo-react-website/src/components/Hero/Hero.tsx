@@ -1,8 +1,11 @@
 import React from "react";
 
-import Typewriter from "./scripts/Typewriter";
 import styles from "./Hero.module.css";
+
+import Typewriter from "./scripts/Typewriter";
+
 import { getAssetUrl } from "../../utils";
+
 
 export const Hero = () => {
   return (
