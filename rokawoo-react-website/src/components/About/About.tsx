@@ -29,14 +29,14 @@ export const About = () => {
               <img src={getImageUrl("about/serverIcon.webp")} alt="server-icon" draggable="false"/>
               <div className={styles.aboutItemText}>
                 <h3>Likes</h3>
-                <p>Anime: Evangelion, SE Lain, Elfen Lied, Japari, FLCL, Soul Eater…<br />Games:  </p>
+                <p>Anime: Evangelion, SE Lain, Elfen Lied, Japari, FLCL, Soul Eater…<br />Games: Omori, OneShot, VR Chat, Sky: CTOL, Minecraft, Leauge…</p>
               </div>
             </li>
             <li className={styles.aboutItem}>
               <img src={getImageUrl("about/uiIcon.webp")} alt="ui-icon" draggable="false"/>
               <div className={styles.aboutItemText}>
-                <h3>Dislikes</h3>
-                <p>Placeholder</p>
+                <h3>Hobbies</h3>
+                <p>Coding, Drawing, Gaming, Anime, Sillymaxxing, Arts and Crafts.<br />If you want to be friends, I'd love to be! ^^</p>
               </div>
             </li>
           </ul>
