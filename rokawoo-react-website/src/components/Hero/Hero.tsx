@@ -2,7 +2,7 @@ import React from "react";
 
 import Typewriter from "./scripts/Typewriter";
 import styles from "./Hero.module.css";
-import { getImageUrl } from "../../utils";
+import { getAssetUrl } from "../../utils";
 
 export const Hero = () => {
   return (
@@ -23,7 +23,7 @@ export const Hero = () => {
             */}
           </div>
           <img
-            src={getImageUrl("hero/heroImage.webp")}
+            src={getAssetUrl("hero/heroImage.webp")}
             alt="rokawoo-mascot-hero"
             className={styles.heroImg}
             draggable="false"

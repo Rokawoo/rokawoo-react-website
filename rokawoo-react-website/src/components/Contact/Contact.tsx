@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./Contact.module.css";
-import { getImageUrl } from "../../utils";
+import { getAssetUrl } from "../../utils";
 
 export const Contact = () => {
   return (
@@ -15,14 +15,14 @@ export const Contact = () => {
         <ul className={styles.links}>
           <li className={styles.link}>
             <img 
-              src={getImageUrl("contact/emailIcon.webp")}
+              src={getAssetUrl("contact/emailIcon.webp")}
               alt="email-icon" 
               draggable="false"/>
             <a href="mailto:ays36@drexel.edu">myemail@email.com</a>
           </li>
           <li className={styles.link}>
             <img
-              src={getImageUrl("contact/linkedinIcon.webp")}
+              src={getAssetUrl("contact/linkedinIcon.webp")}
               alt="linkedin-icon"
               draggable="false"
             />
@@ -30,7 +30,7 @@ export const Contact = () => {
           </li>
           <li className={styles.link}>
             <img 
-              src={getImageUrl("contact/githubIcon.webp")}
+              src={getAssetUrl("contact/githubIcon.webp")}
               alt="github-icon"
               draggable="false"
             />

@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./ProjectCard.module.css";
-import { getImageUrl } from "../../utils";
+import { getAssetUrl } from "../../utils";
 
 interface Project {
   title: string;
@@ -22,7 +22,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className={styles.container}>
       <img
-        src={getImageUrl(imageSrc)}
+        src={getAssetUrl(imageSrc)}
         alt={`Image of ${title}`}
         className={styles.img}
         draggable="false"

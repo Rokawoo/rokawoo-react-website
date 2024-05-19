@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Experience.module.css";
 import skills from "../../data/skills.json";
 import history from "../../data/history.json";
-import { getImageUrl } from "../../utils";
+import { getAssetUrl } from "../../utils";
 import { useSpinAnimation } from "./scripts/spin-animation";
 
 export const Experience = () => {
@@ -27,7 +27,7 @@ export const Experience = () => {
                 >
                   <div className={styles.skillImgContainer}>
                   <img
-                      src={getImageUrl(skill.imageSrc)}
+                      src={getAssetUrl(skill.imageSrc)}
                       alt={skill.title}
                       className={animatedSkills[id] ? styles.animated : ""}
                       draggable="false"
@@ -43,7 +43,7 @@ export const Experience = () => {
               return (
                 <li key={id} className={styles.historyItem}>
                   <img
-                    src={getImageUrl(historyItem.imageSrc)}
+                    src={getAssetUrl(historyItem.imageSrc)}
                     alt={`${historyItem.organisation} Logo`}
                     draggable="false"
                   />

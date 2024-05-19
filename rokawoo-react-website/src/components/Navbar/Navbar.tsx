@@ -3,7 +3,7 @@ import TextScramble from "./scripts/text-scramble.ts";
 import { greetAgent } from "./scripts/greet-agent.ts";
 
 import styles from "./Navbar.module.css";
-import { getImageUrl } from "../../utils";
+import { getAssetUrl } from "../../utils";
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -41,8 +41,8 @@ export const Navbar = () => {
                         className={styles.menuBtn}
                         src={
                             menuOpen
-                                ? getImageUrl("nav/closeIcon.webp")
-                                : getImageUrl("nav/menuIcon.webp")
+                                ? getAssetUrl("nav/closeIcon.webp")
+                                : getAssetUrl("nav/menuIcon.webp")
                         }
                         alt="menu-button"
                         draggable="false"
