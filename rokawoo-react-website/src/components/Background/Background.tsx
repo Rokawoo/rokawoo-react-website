@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './Background.module.css';
 import '../../vars.css';
 

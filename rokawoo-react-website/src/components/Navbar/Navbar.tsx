@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+
 import TextScramble from "./scripts/text-scramble.ts";
 import { greetAgent } from "./scripts/greet-agent.ts";
 
