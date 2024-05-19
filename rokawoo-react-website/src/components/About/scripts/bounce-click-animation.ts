@@ -14,8 +14,9 @@ export const useBounceClickAnimation = (audioSrc: string) => {
   }, []);
 
   const handleClick = useCallback(() => {
+    const audio = new Audio(audioSrc);
     audio.play();
-  }, [audio]);
+  }, [audioSrc]);
 
   useEffect(() => {
     return () => {

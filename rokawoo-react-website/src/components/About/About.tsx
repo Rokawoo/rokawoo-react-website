@@ -5,7 +5,7 @@ import { getImageUrl } from "../../utils";
 import { useBounceClickAnimation } from "./scripts/bounce-click-animation";
 
 export const About = () => {
-  const audioSrc = getImageUrl("audio/clickSound.mp3");
+  const audioSrc = getImageUrl("about/awoo.mp3");
   const {
     isAnimated,
     handleHover,
