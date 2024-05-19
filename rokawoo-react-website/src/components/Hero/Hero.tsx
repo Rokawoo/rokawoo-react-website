@@ -2,7 +2,7 @@ import React from "react";
 
 import Typewriter from "./scripts/Typewriter";
 import styles from "./Hero.module.css";
-import { getAssetUrl } from "../../utils";
+import { getImageUrl } from "../../utils";
 
 export const Hero = () => {
   return (
@@ -16,20 +16,13 @@ export const Hero = () => {
             <p className={styles.description}>
               <Typewriter />
             </p>
-            {/*
-            <a href="#contact" className={styles.contactBtn}>
-              Contact Me
-            </a>
-            */}
           </div>
           <img
-            src={getAssetUrl("hero/heroImage.webp")}
+            src={getImageUrl("hero/heroImage.webp")}
             alt="rokawoo-mascot-hero"
             className={styles.heroImg}
             draggable="false"
           />
-          <div className={styles.topBlur} />
-          <div className={styles.bottomBlur} />
         </section>
       </div>
     </>

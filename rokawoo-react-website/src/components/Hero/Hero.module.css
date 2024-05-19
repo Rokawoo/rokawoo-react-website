@@ -52,19 +52,6 @@
   min-height: 230px;
 }
 
-/*
-.contactBtn {
-  text-decoration: none;
-  background-color: var(--color-primary);
-  color: var(--color-text-primary);
-  border-radius: 100px;
-  font-size: 30px;
-  font-weight: 600;
-  padding: 17px 26px;
-  box-shadow: 0 0 4px 0 rgba(var(--color-primary), 0.25);
-}
-*/
-
 .heroImg {
   margin: -25px 0 25px auto;
   width: 800px;
@@ -86,36 +73,6 @@
     transform: translate(0, -0px) rotate(0deg);
   }
 }
-
-/*
-.topBlur {
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
-  border-radius: 764px;
-  background: rgba(var(--color-secondary-rgb), 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
-
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(var(--color-secondary-rgb), 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
-*/
 
 @media screen and (max-width: 1440px) {
   
