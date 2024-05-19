@@ -11,6 +11,7 @@ import { greetAgent } from "./scripts/greet-agent.ts";
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const titleRef = useRef<HTMLAnchorElement>(null);
+    const [browserImage, setBrowserImage] = useState<string | null>(null);
 
     useEffect(() => {
         if (titleRef.current) {
@@ -20,8 +21,9 @@ export const Navbar = () => {
                 'Ι\'m Jυsτ Sο Hαppγ Tο Sεε Υου'
             ]);
 
-            const title = greetAgent();
+            const [title, image] = greetAgent();
             titleRef.current.innerText = title;
+            setBrowserImage(image);
 
             return () => {
                 if (textScramble) {
@@ -31,10 +33,15 @@ export const Navbar = () => {
         }
     }, []);
 
+    const BrowserImage = () => {
+        if (!browserImage) return null;
+        return <img className={styles.browserImg} src={browserImage} draggable="false" alt="browser-icon" />;
+    };
 
     return (
         <div className={styles.backgroundColor}>
             <nav className={styles.navbar}>
+                <BrowserImage />
                 <a ref={titleRef} className={styles.title} href="/">
                     Loading...
                 </a>

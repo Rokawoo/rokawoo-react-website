@@ -14,6 +14,12 @@
   margin: 0 10%;
 }
 
+.browserImg {
+  position: absolute;
+  left: -5%;
+  width: 60px;
+}
+
 .title {
   position: relative;
   font-size: 30px;
@@ -21,7 +27,6 @@
   text-decoration: none;
   color: var(--color-text-primary);
 }
-
 
 .menuBtn {
   display: none;
@@ -78,7 +83,7 @@
   text-shadow: 2px 2px 4px rgba(var(--color-secondary-rgb), 0.6);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1440px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -94,6 +99,12 @@
     min-height: 74px;
   }
 
+  .browserImg {
+    max-width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -75%);
+}
   .menu {
     position: absolute;
     right: 0;
