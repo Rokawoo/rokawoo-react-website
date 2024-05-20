@@ -83,7 +83,7 @@
   padding: 25px;
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: 0.4s;
+  transition: all 0.4s ease;
 }
 
 .aboutItem:nth-child(odd) {
@@ -126,6 +126,18 @@
 .aboutItem h3 {
   font-size: 25px;
   font-weight: 600;
+}
+
+.aboutItem:nth-child(odd) h3 {
+  color: var(--color-accent-1);
+}
+
+.aboutItem:nth-child(even) h3 {
+  color: var(--color-accent-2);
+}
+
+.aboutItem:nth-child(3n) h3 {
+  color: var(--color-accent-3);
 }
 
 .aboutItem p {
