@@ -10,7 +10,7 @@
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
-  padding-bottom: 54px;
+  padding-bottom: 3.25vw;
 }
 
 .title {
@@ -127,6 +127,10 @@
 }
 
 @media screen and (max-width: 1080px) {
+  .container {
+    padding-bottom: 8vw;
+  }
+
   .content {
     flex-direction: column;
     align-items: center;
