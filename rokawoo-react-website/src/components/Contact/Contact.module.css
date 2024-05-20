@@ -38,7 +38,7 @@
 }
 
 .text p {
-  margin-left: 0.5vw;
+  margin-left: 0.6vw;
   font-size: 40px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -94,10 +94,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .text p {
-    margin-left: 0.6vw;
   }
   
   .links {
