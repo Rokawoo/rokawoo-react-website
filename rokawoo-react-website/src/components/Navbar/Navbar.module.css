@@ -90,20 +90,21 @@
   }
 
   .title {
-    margin-top: 15%;
     align-self: center;
+    margin-top: 15%;
     margin-left: 0;
     margin-right: 0;
     text-align: center;
     min-width: 100%;
-    min-height: 74px;
+    min-height: 14.8vw;
+    font-size: 6vw;
   }
 
   .browserImg {
-    max-width: 100%;
+    min-width: 10vw;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -9vw);
 }
   .menu {
     position: absolute;
