@@ -10,7 +10,7 @@
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
-  padding-bottom: 3.25vw;
+  padding-bottom: 3vw;
 }
 
 .title {
@@ -126,9 +126,15 @@
   margin-left: 17px;
 }
 
+@media screen and (max-width: 1440px) { 
+  .container {
+    padding-bottom: 1vw;
+  }
+}
+
 @media screen and (max-width: 1080px) {
   .container {
-    padding-bottom: 8vw;
+    padding-bottom: 5vw;
   }
 
   .content {
