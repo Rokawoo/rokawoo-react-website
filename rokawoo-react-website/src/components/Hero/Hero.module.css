@@ -39,6 +39,7 @@
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .title::selection{
@@ -78,6 +79,8 @@
   
   .container {
     flex-direction: column-reverse;
+    margin-top: 82px;
+    margin-bottom: -72px;
   }
 
   .content {

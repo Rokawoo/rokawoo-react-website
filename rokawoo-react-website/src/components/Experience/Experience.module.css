@@ -6,12 +6,11 @@
 }
 
 .container {
-
   color: var(--color-text-secondary);
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
-  padding-bottom: 49px;
+  padding-bottom: 3vw;
 }
 
 .title {
@@ -127,7 +126,17 @@
   margin-left: 17px;
 }
 
+@media screen and (max-width: 1440px) { 
+  .container {
+    padding-bottom: 1vw;
+  }
+}
+
 @media screen and (max-width: 1080px) {
+  .container {
+    padding-bottom: 5vw;
+  }
+
   .content {
     flex-direction: column;
     align-items: center;

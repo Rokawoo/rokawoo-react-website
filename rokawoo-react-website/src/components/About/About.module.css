@@ -9,10 +9,10 @@
   position: relative;
   z-index: 1;
   border-radius: 15px;
-  padding: 73px;
-  margin-top: 90px;
+  margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 27px;
 }
 
 .title {
@@ -144,14 +144,17 @@
   font-size:  25px;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1440px) { 
   .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 33px;
+    padding-bottom: 4.5vw;
   }
-  
+}
+
+@media screen and (max-width: 1080px) { 
+  .container {
+    padding-bottom: 5vw;
+  }
+
   .content {
     flex-direction: column;
   }
