@@ -97,6 +97,7 @@
   }
 
   .heroImg {
+    margin-left: 0;
     max-width: 100%;
     margin-bottom: 5%;
   }
