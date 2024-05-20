@@ -6,12 +6,11 @@
 }
 
 .container {
-
   color: var(--color-text-secondary);
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
-  padding-bottom: 49px;
+  padding-bottom: 54px;
 }
 
 .title {
