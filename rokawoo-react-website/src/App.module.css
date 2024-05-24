@@ -7,6 +7,7 @@
     overflow: hidden;
 }
 
+/* Text Selection */
 ::-moz-selection { /* For Firefox */
     color: var(--color-text-secondary);
     background: var(--color-light);
@@ -25,7 +26,6 @@
 ::-webkit-scrollbar-thumb {
     background: var(--color-scrollbar-thumb);
     border-radius: 5px;
-
 }
   
 ::-webkit-scrollbar-track {

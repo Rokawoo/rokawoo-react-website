@@ -7,7 +7,7 @@ import { getAssetUrl } from "../../utils";
 
 interface Project {
   title: string;
-  imageSrc: string;
+  videoSrc: string;
   description: string;
   skills: string[];
   demo?: string | null;
@@ -19,15 +19,18 @@ interface ProjectCardProps {
 }
  
 export const ProjectCard: React.FC<ProjectCardProps> = ({
-  project: { title, imageSrc, description, skills, demo, source },
+  project: { title, videoSrc, description, skills, demo, source },
 }) => {
   return (
     <div className={styles.container}>
-      <img
-        src={getAssetUrl(imageSrc)}
-        alt={`Image of ${title}`}
-        className={styles.img}
+      <video
+        src={getAssetUrl(videoSrc)}
+        className={styles.vid}
         draggable="false"
+        autoPlay
+        loop
+        muted
+        playsInline
       />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
