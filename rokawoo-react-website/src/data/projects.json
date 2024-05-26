@@ -1,7 +1,7 @@
 [
   {
     "title": "Cybernetic Automata",
-    "videoSrc": "projects/cyberneticAutomata.webm",
+    "videoSrc": "projects/cyberneticAutomata.mp4",
     "description": "Exploring Dr. Brian L. Stuart's Cybernetic Automata to simulate natural intelligence. STAR Scholars 2023",
     "skills": ["Research Study", "AI", "Experiment/Simulation"],
     "demo": null, 
@@ -33,7 +33,7 @@
   },
   {
     "title": "Neocities Landing Page",
-    "videoSrc": "projects/neocitiesLandingPage.webp",
+    "videoSrc": "projects/neocitiesLandingPage.mp4",
     "description": "A hub for all of my web-dev projects, both new and old, featuring custom elements. Hosted on Neocities.",
     "skills": ["Neocities", "HTML", "CSS", "Javascript"],
     "demo": "https://rokawoo.neocities.org/",
