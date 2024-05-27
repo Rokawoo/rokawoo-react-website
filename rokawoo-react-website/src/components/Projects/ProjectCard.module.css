@@ -122,8 +122,8 @@
     var(--color-accent-2) 0 40%,
     var(--color-accent-3) 0 60%
   );
-  color: black;
-  outline: 3px solid black;
+  color: var(--color-primary);
+  outline: 3px solid var(--color-primary);
   outline-offset: -3px;
   text-shadow: 2px 2px var(--color-text-primary);
 }
