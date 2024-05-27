@@ -41,7 +41,7 @@
   },
   {
     "title": "Rokawoo React Site",
-    "videoSrc": "projects/rokawooReactSite.webp",
+    "videoSrc": "projects/rokawooReactSite.mp4",
     "description": "A personal portfolio website showcasing my interests and projects, built with React. You're viewing it right now!",
     "skills": ["React", "HTML", "CSS", "TypeScript"],
     "demo": "https://www.rokawoo.com",
