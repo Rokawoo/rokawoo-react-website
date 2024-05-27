@@ -47,11 +47,11 @@
 }
 
 .description {
+  min-height: 230px;
+  min-width: 490px;
   font-size: 30px;
   font-family: var(--font-comfortaa);
   margin-bottom: 52px;
-  min-height: 230px;
-  min-width: 490px;
 }
 
 .heroImg {
