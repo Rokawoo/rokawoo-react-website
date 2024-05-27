@@ -17,7 +17,7 @@
   },
   {
     "title": "Kerfus Tutor",
-    "videoSrc": "projects/kerfusTutor.webp",
+    "videoSrc": "projects/kerfusTutor.mp4",
     "description": "An interactive AI tutor that adapts to individual learning styles; AI for the Common Good; Philly Codefest '24.",
     "skills": ["OpenAI", "STT/TTS", "Philly Codefest 2024"],
     "demo": null,
@@ -25,7 +25,7 @@
   },
   {
     "title": "Wall & Ball Game",
-    "videoSrc": "projects/wallBallGame.webp",
+    "videoSrc": "projects/wallBallGame.mp4",
     "description": "Enter a philosophical conundrum where you are your worst opponent in the style of a retro pong game.",
     "skills": ["Game Dev", "OPP", "Pygame", "Python"],
     "demo": null,
