@@ -26,12 +26,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <animated.div
-      className={styles.card}
+      className={styles.container}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ transform: props.xys.to(trans) }}
     >
-      <div className={styles.container}>
+      <div className={styles.card}>
         <video
           src={getAssetUrl(videoSrc)}
           className={styles.vid}
