@@ -17,7 +17,7 @@ export const calc = (
 ): [number, number, number] => [
   -(y - (rect.top + rect.height / 2)) / BUFFER,
   (x - (rect.left + rect.width / 2)) / BUFFER,
-  1.01
+  SCALE_FACTOR
 ];
 
 export const use3DSpring = () => {
