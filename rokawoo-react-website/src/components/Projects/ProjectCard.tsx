@@ -31,35 +31,33 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       onMouseLeave={handleMouseLeave}
       style={{ transform: props.xys.to(trans) }}
     >
-      <div className={styles.card}>
-        <video
-          src={getAssetUrl(videoSrc)}
-          className={styles.vid}
-          draggable="false"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
-        <ul className={styles.skills}>
-          {skills.map((skill, id) => (
-            <li key={id} className={styles.skill}>
-              {skill}
-            </li>
-          ))}
-        </ul>
-        <div className={styles.links}>
-          {demo && (
-            <a href={demo} className={styles.link}>
-              Demo
-            </a>
-          )}
-          <a href={source} className={styles.link}>
-            Source
+      <video
+        src={getAssetUrl(videoSrc)}
+        className={styles.vid}
+        draggable="false"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.description}>{description}</p>
+      <ul className={styles.skills}>
+        {skills.map((skill, id) => (
+          <li key={id} className={styles.skill}>
+            {skill}
+          </li>
+        ))}
+      </ul>
+      <div className={styles.links}>
+        {demo && (
+          <a href={demo} className={styles.link}>
+            Demo
           </a>
-        </div>
+        )}
+        <a href={source} className={styles.link}>
+          Source
+        </a>
       </div>
     </animated.div>
   );

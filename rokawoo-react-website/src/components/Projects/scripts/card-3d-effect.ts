@@ -2,19 +2,23 @@ import { useSpring, SpringConfig } from "react-spring";
 import { useCallback } from "react";
 
 const BUFFER = 50;
+const PERSPECTIVE = 500;
+const ROTATE_X_FACTOR = 0.25;
+const ROTATE_Y_FACTOR = 0.5;
+const SCALE_FACTOR = 1.01;
 
 export const trans = (x: number, y: number, s: number): string =>
-  `perspective(500px) rotateX(${x / 3}deg) rotateY(${y / 3}deg) scale(${s})`;
+  `perspective(${PERSPECTIVE}px) rotateX(${x * ROTATE_X_FACTOR}deg) rotateY(${y * ROTATE_Y_FACTOR}deg) scale(${s})`;
 
 export const calc = (
   x: number,
   y: number,
   rect: DOMRect
-): [number, number, number] => {
-  const yMovement = -(y - (rect.top + rect.height / 2)) / BUFFER;
-  const xMovement = (x - (rect.left + rect.width / 2)) / BUFFER;
-  return [yMovement, xMovement, 1.003];
-};
+): [number, number, number] => [
+  -(y - (rect.top + rect.height / 2)) / BUFFER,
+  (x - (rect.left + rect.width / 2)) / BUFFER,
+  1.01
+];
 
 export const use3DSpring = () => {
   const [props, set] = useSpring(() => ({

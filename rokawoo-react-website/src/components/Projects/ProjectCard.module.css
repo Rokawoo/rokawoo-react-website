@@ -1,10 +1,5 @@
 @import "../../vars.css";
 
-.card {
-  transform-style: preserve-3d;
-  transition: transform 0.1s;
-}
-
 .container {
   z-index: 1;
   display: flex;
@@ -16,6 +11,8 @@
   max-width: 345px;
   transition: all 0.3s ease-in-out;
   perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.1s;
 }
 
 .container:nth-child(3n + 1) {  
