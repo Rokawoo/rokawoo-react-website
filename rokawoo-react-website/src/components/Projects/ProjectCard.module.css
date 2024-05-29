@@ -9,10 +9,9 @@
   box-shadow: 0 2px 8px -2px var(--color-secondary);
   padding: 18px 24px;
   max-width: 345px;
-  transition: all 0.3s ease-in-out;
-  perspective: 1000px;
+  transition: all 0.3s ease-in-out, transform 0.1s;
   transform-style: preserve-3d;
-  transition: transform 0.1s;
+  perspective: 1000px;
 }
 
 .container:nth-child(3n + 1) {  
@@ -128,10 +127,9 @@
 }
 
 @keyframes shake {
-  0% { transform: translateX(0); }
+  0%, 100% { transform: translateX(0); }
   20% { transform: translateX(-5px) rotate(-3deg); }
   40% { transform: translateX(3px) rotate(2deg); }
   60% { transform: translateX(-2px) rotate(-2deg); }
   80% { transform: translateX(5px) rotate(4deg); }
-  100% { transform: translateX(0); }
 }
