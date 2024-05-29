@@ -3,17 +3,17 @@
     "title": "Cybernetic Automata",
     "videoSrc": "projects/cyberneticAutomata.mp4",
     "description": "Exploring Dr. Brian L. Stuart's Cybernetic Automata to simulate natural intelligence. STAR Scholars 2023",
-    "skills": ["Research Study", "AI", "Experiment/Simulation"],
+    "skills": ["Research Study", "AI", "Comp. Simulation"],
     "demo": null, 
-    "source": "https://gitlab.com/example"
+    "source": "TEMPORARY"
   },  
   {
     "title": "VRChAI (Roka AI)",
-    "videoSrc": "projects/vrChAI.webp",
-    "description": "Interactive chat AI featuring advanced context awareness, including visual and auditory abilities. Hosted on VrChat.",
+    "videoSrc": "projects/vrChAi.mp4",
+    "description": "Virtual reality chat AI featuring advanced context awareness, including visual and auditory abilities. Hosted on VrChat.",
     "skills": ["OpenAI", "UDP/OSC", "Computer Vision"],
     "demo": null,
-    "source": "https://gitlab.com/example"
+    "source": "TEMPORARY"
   },
   {
     "title": "Kerfus Tutor",
@@ -53,7 +53,7 @@
     "description": "Designed and developed a unique web application with custom sorting algorithms and an AI shopping assistant.",
     "skills": ["Fullstack", "UI/UX", "Prompt Engineering"],
     "demo": null,
-    "source": "w"
+    "source": "TEMPORARY"
   },  
   {
     "title": "Certificate Record Logger",
