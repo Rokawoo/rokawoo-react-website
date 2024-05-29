@@ -57,7 +57,7 @@
   },  
   {
     "title": "Certificate Record Logger",
-    "videoSrc": "projects/certificateRecordLogger.webp",
+    "videoSrc": "projects/certificateRecordLogger.mp4",
     "description": "Automated system for Security Training Enforcement record keeping. Verification and filesystem operations.",
     "skills": ["RegEx", "Logging", "Data Scraping", "Sys"],
     "demo": null,

@@ -10,10 +10,12 @@
   padding: 18px 24px;
   max-width: 345px;
   transition: all 0.3s ease-in-out;
+  perspective: 1000px;
 }
 
-.container:hover {
-  transform: scale(1.01);
+.card {
+  transform-style: preserve-3d;
+  transition: transform 0.1s;
 }
 
 .container:nth-child(3n + 1) {  
