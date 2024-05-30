@@ -62,7 +62,7 @@ export const Navbar = () => {
                             <a href="#about">[ About ]</a>
                         </li>
                         <li className={styles.menuItem}>
-                            <a href="#experience">[ Experience ]</a>
+                            <a href="#kins">[ Kins ]</a>
                         </li>
                         <li className={styles.menuItem}>
                             <a href="#projects">[ Projects ]</a>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Experience.module.css";
+import styles from "./Kins.module.css";
 
 import skills from "../../data/skills.json";
 import history from "../../data/history.json";
@@ -9,15 +9,15 @@ import { getAssetUrl } from "../../utils";
 import { useSpinAnimation } from "./scripts/spin-animation";
 
 
-export const Experience = () => {
+export const Kins = () => {
   const { animatedSkills, handleHover, handleAnimationEnd } = useSpinAnimation(skills);
 
   return (
     <div className={styles.backgroundColor}>
       <div className={`${styles.wave} ${styles.primary}`}></div>
 
-      <section className={styles.container} id="experience">
-        <h2 className={styles.title}>Experience</h2>
+      <section className={styles.container} id="kins">
+        <h2 className={styles.title}>Kins</h2>
         <div className={styles.content}>
           <div className={styles.skills}>
             {skills.map((skill, id) => {
