@@ -1,38 +1,64 @@
 import React from "react";
+import { animated } from "@react-spring/web";
 
 import styles from "./ProjectCard.module.css";
-import { getImageUrl } from "../../utils";
 
-export const ProjectCard = ({
-  project: { title, imageSrc, description, skills, demo, source },
+import { getAssetUrl } from "../../utils";
+import { trans, use3DSpring } from "./scripts/card-3d-effect";
+
+interface Project {
+  title: string;
+  videoSrc: string;
+  description: string;
+  skills: string[];
+  demo?: string | null;
+  source: string;
+}
+
+interface ProjectCardProps {
+  project: Project;
+}
+
+export const ProjectCard: React.FC<ProjectCardProps> = ({
+  project: { title, videoSrc, description, skills, demo, source },
 }) => {
+  const { props, handleMouseMove, handleMouseLeave } = use3DSpring();
+
   return (
-    <div className={styles.container}>
-      <img
-        src={getImageUrl(imageSrc)}
-        alt={`Image of ${title}`}
-        className={styles.img}
+    <animated.div
+      className={styles.container}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{ transform: props.xys.to(trans) }}
+    >
+      <video
+        src={getAssetUrl(videoSrc)}
+        className={styles.vid}
         draggable="false"
+        autoPlay
+        loop
+        muted
+        playsInline
       />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <ul className={styles.skills}>
-        {skills.map((skill, id) => {
-          return (
-            <li key={id} className={styles.skill}>
-              {skill}
-            </li>
-          );
-        })}
+        {skills.map((skill, id) => (
+          <li key={id} className={styles.skill}>
+            {skill}
+          </li>
+        ))}
       </ul>
       <div className={styles.links}>
-        <a href={demo} className={styles.link}>
-          Demo
-        </a>
-        <a href={source} className={styles.link}>
+        {demo && (
+          <a href={demo} className={styles.link}>
+            Demo
+          </a>
+        )}
+        <a href={source} className={styles.link} target="_blank" rel="noopener noreferrer">
           Source
         </a>
       </div>
-    </div>
+    </animated.div>
   );
 };

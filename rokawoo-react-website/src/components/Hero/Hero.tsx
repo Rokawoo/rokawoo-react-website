@@ -1,8 +1,11 @@
 import React from "react";
 
-import Typewriter from "./scripts/Typewriter";
 import styles from "./Hero.module.css";
-import { getImageUrl } from "../../utils";
+
+import Typewriter from "./scripts/Typewriter";
+
+import { getAssetUrl } from "../../utils";
+
 
 export const Hero = () => {
   return (
@@ -16,20 +19,13 @@ export const Hero = () => {
             <p className={styles.description}>
               <Typewriter />
             </p>
-            {/*
-            <a href="#contact" className={styles.contactBtn}>
-              Contact Me
-            </a>
-            */}
           </div>
           <img
-            src={getImageUrl("hero/heroImage.png")}
+            src={getAssetUrl("hero/heroImage.webp")}
             alt="rokawoo-mascot-hero"
             className={styles.heroImg}
             draggable="false"
           />
-          <div className={styles.topBlur} />
-          <div className={styles.bottomBlur} />
         </section>
       </div>
     </>

@@ -7,16 +7,16 @@
 
 .container {
   position: relative;
-  /* background-color: rgba(12, 12, 12, 0.6); */
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
   z-index: 1;
-  margin: 10%;
+  border-radius: 15px;
+  margin-top: 79px;
+  margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 34px;
 }
 
 .title {
+  position: relative;
   margin-bottom: 5%;
   color: var(--color-text-primary);
   font-size: 35px;
@@ -33,6 +33,22 @@
 
 .aboutImg {
   width: 450px;
+}
+
+.animated {
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 .aboutItems {
@@ -67,7 +83,7 @@
   padding: 25px;
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: 0.4s;
+  transition: all 0.4s ease;
 }
 
 .aboutItem:nth-child(odd) {
@@ -96,8 +112,15 @@
 
 .aboutItem:hover {
   background-size: 100% 100%;
+}
+
+.aboutItem:hover .aboutItemText {
   text-shadow: 2px 2px 4px var(--color-text-secondary);
-  text-indent: 5%;
+  transform: translateX(5%);
+}
+
+.aboutItemText {
+  transition: 0.4s;
 }
 
 .aboutItem h3 {
@@ -105,28 +128,33 @@
   font-weight: 600;
 }
 
+.aboutItem:nth-child(odd) h3 {
+  color: var(--color-accent-1);
+}
+
+.aboutItem:nth-child(even) h3 {
+  color: var(--color-accent-2);
+}
+
+.aboutItem:nth-child(3n) h3 {
+  color: var(--color-accent-3);
+}
+
 .aboutItem p {
   font-size:  25px;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) { 
   .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    padding-bottom: 54px;
   }
-  
+
   .content {
     flex-direction: column;
   }
 
-  .aboutImage {
+  .aboutImg {
     max-width: 100%;
-  }
-
-  .aboutItmes{
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .aboutItems::before {

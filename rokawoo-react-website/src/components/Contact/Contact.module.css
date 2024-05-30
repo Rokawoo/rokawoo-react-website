@@ -23,7 +23,7 @@
   font-size: 80px;
   font-weight: 700;
   letter-spacing: 4px;
-  
+  text-align: center;
 }
 
 .text h2{
@@ -38,7 +38,7 @@
 }
 
 .text p {
-  margin-left: auto;
+  margin-left: 0.6vw;
   font-size: 40px;
   font-weight: 400;
   letter-spacing: 2px;

@@ -13,7 +13,7 @@
     "startDate": "Aug, 2021",
     "endDate": "Aug, 2022",
     "experiences": ["Worked on Windows 11", "Designed the control panel"],
-    "imageSrc": "history/microsoft.png"
+    "imageSrc": "history/microsoft.webp"
   },
   {
     "role": "SWE Intern",
@@ -24,6 +24,6 @@
       "Worked on component library",
       "Helped create UI components"
     ],
-    "imageSrc": "history/netflix.png"
+    "imageSrc": "history/netflix.webp"
   }
 ]

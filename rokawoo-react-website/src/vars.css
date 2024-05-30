@@ -24,6 +24,8 @@
     --color-dark: #5b6692;
     --color-dark-rgb: 91, 102, 146;
 
+    --color-scrollbar-thumb: #555555;
+
     /* Fonts */
     --font-comfortaa: 'Comfortaa Variable';
 }

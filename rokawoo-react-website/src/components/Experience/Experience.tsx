@@ -1,11 +1,17 @@
 import React from "react";
 
 import styles from "./Experience.module.css";
+
 import skills from "../../data/skills.json";
 import history from "../../data/history.json";
-import { getImageUrl } from "../../utils";
+
+import { getAssetUrl } from "../../utils";
+import { useSpinAnimation } from "./scripts/spin-animation";
+
 
 export const Experience = () => {
+  const { animatedSkills, handleHover, handleAnimationEnd } = useSpinAnimation(skills);
+
   return (
     <div className={styles.backgroundColor}>
       <div className={`${styles.wave} ${styles.primary}`}></div>
@@ -16,9 +22,19 @@ export const Experience = () => {
           <div className={styles.skills}>
             {skills.map((skill, id) => {
               return (
-                <div key={id} className={styles.skill}>
+                <div
+                  key={id}
+                  className={styles.skill}
+                  onMouseEnter={() => handleHover(id)}
+                  onAnimationEnd={() => handleAnimationEnd(id)}
+                >
                   <div className={styles.skillImgContainer}>
-                    <img src={getImageUrl(skill.imageSrc)} alt={skill.title} draggable="false"/>
+                  <img
+                      src={getAssetUrl(skill.imageSrc)}
+                      alt={skill.title}
+                      className={animatedSkills[id] ? styles.animated : ""}
+                      draggable="false"
+                  />
                   </div>
                   <p>{skill.title}</p>
                 </div>
@@ -30,7 +46,7 @@ export const Experience = () => {
               return (
                 <li key={id} className={styles.historyItem}>
                   <img
-                    src={getImageUrl(historyItem.imageSrc)}
+                    src={getAssetUrl(historyItem.imageSrc)}
                     alt={`${historyItem.organisation} Logo`}
                     draggable="false"
                   />

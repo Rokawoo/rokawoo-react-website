@@ -1,7 +1,9 @@
 import React from "react";
 
 import styles from "./Contact.module.css";
-import { getImageUrl } from "../../utils";
+
+import { getAssetUrl } from "../../utils";
+
 
 export const Contact = () => {
   return (
@@ -15,26 +17,26 @@ export const Contact = () => {
         <ul className={styles.links}>
           <li className={styles.link}>
             <img 
-              src={getImageUrl("contact/emailIcon.png")}
+              src={getAssetUrl("contact/emailIcon.webp")}
               alt="email-icon" 
               draggable="false"/>
-            <a href="mailto:ays36@drexel.edu">myemail@email.com</a>
-          </li>
-          <li className={styles.link}>
-            <img
-              src={getImageUrl("contact/linkedinIcon.png")}
-              alt="linkedin-icon"
-              draggable="false"
-            />
-            <a href="https://www.linkedin.com/in/augustus-sroka">linkedin.com/Augustus-Sroka</a>
+            <a href="mailto:meowbox@rokawoo.com">meowbox@rokawoo.com</a>
           </li>
           <li className={styles.link}>
             <img 
-              src={getImageUrl("contact/githubIcon.png")}
+              src={getAssetUrl("contact/githubIcon.webp")}
               alt="github-icon"
               draggable="false"
             />
             <a href="https://www.github.com/Rokawoo">github.com/Rokawoo</a>
+          </li>
+          <li className={styles.link}>
+            <img
+              src={getAssetUrl("contact/discordIcon.webp")}
+              alt="discord-icon"
+              draggable="false"
+            />
+            <a href="https://discord.com/">.roka.</a>
           </li>
         </ul>
       </footer>

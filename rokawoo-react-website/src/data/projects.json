@@ -1,26 +1,66 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Cybernetic Automata",
+    "videoSrc": "projects/cyberneticAutomata.mp4",
+    "description": "Exploring Dr. Brian L. Stuart's Cybernetic Automata to simulate natural intelligence. STAR Scholars 2023",
+    "skills": ["Research Study", "AI", "Comp. Simulation"],
+    "demo": null, 
+    "source": "https://github.com/Rokawoo/cybernetic-automata"
+  },  
+  {
+    "title": "VRChAI (Roka AI)",
+    "videoSrc": "projects/vrChAi.mp4",
+    "description": "Virtual reality chat AI featuring advanced context awareness, including visual and auditory abilities. Hosted on VrChat.",
+    "skills": ["OpenAI", "UDP/OSC", "Computer Vision"],
+    "demo": null,
+    "source": "https://github.com/Rokawoo/vrchai"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Kerfus Tutor",
+    "videoSrc": "projects/kerfusTutor.mp4",
+    "description": "An interactive AI tutor that adapts to individual learning styles; AI for the Common Good; Philly Codefest '24.",
+    "skills": ["OpenAI", "STT/TTS", "Philly Codefest 2024"],
+    "demo": null,
+    "source": "https://github.com/Rokawoo/kerfus-tutor"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Wall & Ball Game",
+    "videoSrc": "projects/wallBallGame.mp4",
+    "description": "Enter a philosophical conundrum where you are your worst opponent in the style of a retro pong game.",
+    "skills": ["Game Dev", "OPP", "Pygame", "Python"],
+    "demo": null,
+    "source": "https://github.com/Rokawoo/wall-ball-game"
+  },
+  {
+    "title": "Neocities Landing Page",
+    "videoSrc": "projects/neocitiesLandingPage.mp4",
+    "description": "A hub for all of my web-dev projects, both new and old, featuring custom elements. Hosted on Neocities.",
+    "skills": ["Neocities", "HTML", "CSS", "Javascript"],
+    "demo": "https://rokawoo.neocities.org/",
+    "source": "https://github.com/Rokawoo/neocities"
+  },
+  {
+    "title": "Rokawoo React Site",
+    "videoSrc": "projects/rokawooReactSite.mp4",
+    "description": "A personal portfolio website showcasing my interests and projects, built with React. You're viewing it right now!",
+    "skills": ["React", "HTML", "CSS", "TypeScript"],
+    "demo": "https://www.rokawoo.com",
+    "source": "https://github.com/Rokawoo/rokawoo-react-website"
+  },
+  {
+    "title": "Drexel Recommender",
+    "videoSrc": "projects/drexelRecommender.mp4",
+    "description": "Designed and developed a unique web application with custom sorting algorithms and an AI shopping assistant.",
+    "skills": ["Fullstack", "UI/UX", "Prompt Engineering"],
+    "demo": null,
+    "source": "https://github.com/Rokawoo/drexel-recommender"
+  },  
+  {
+    "title": "Certificate Rec. Logger",
+    "videoSrc": "projects/certificateRecordLogger.mp4",
+    "description": "Automated system for Security Training Enforcement record keeping. Verification and filesystem operations.",
+    "skills": ["RegEx", "Logging", "Data Scraping", "Sys"],
+    "demo": null,
+    "source": "https://github.com/Rokawoo/security-training-enforcement-system"
   }
 ]

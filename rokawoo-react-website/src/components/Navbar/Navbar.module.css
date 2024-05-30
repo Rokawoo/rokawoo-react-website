@@ -14,13 +14,19 @@
   margin: 0 10%;
 }
 
+.browserImg {
+  position: absolute;
+  left: -5%;
+  width: 60px;
+}
+
 .title {
+  position: relative;
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text-primary);
 }
-
 
 .menuBtn {
   display: none;
@@ -49,12 +55,12 @@
 
 .menuItem:hover {
   color: var(--color-light);
-  text-indent: 5%;
   text-shadow: 2px 2px 4px rgba(var(--color-light-rgb), 0.6);
   text-decoration: underline;
+  text-decoration-thickness: 0.14em; 
   font-size: 1.1em;
   font-weight: 500;
-  transform: translateY(-2px);
+  transform: translateY(-2px) translateX(5%);
 }
 
 .menuItem:hover:nth-child(odd) {
@@ -77,22 +83,30 @@
   text-shadow: 2px 2px 4px rgba(var(--color-secondary-rgb), 0.6);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1440px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .title {
-    margin-top: 15%;
     align-self: center;
+    margin-top: 15%;
     margin-left: 0;
     margin-right: 0;
     text-align: center;
     min-width: 100%;
-    min-height: 74px;
+    min-height: 14.8vw;
+    font-size: 6vw;
   }
 
+  .browserImg {
+    min-width: 10vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -9vw);
+  }
+  
   .menu {
     position: absolute;
     right: 0;
@@ -131,11 +145,11 @@
       rgba(var(--color-primary-rgb), 1) 100%
     );
     padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 4px 0 rgba(var(--color-primary), 0.25);
   }
 
   .menuItem:hover {
-    text-indent: 0%;
+    transform: translateY(-2px);
   }
 
   .menuOpen {
