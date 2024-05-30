@@ -47,15 +47,15 @@ export const Kins = () => {
                 <li key={id} className={styles.favoriteItem}>
                   <img
                     src={getAssetUrl(favoriteItem.imageSrc)}
-                    alt={`${favoriteItem.organisation} Logo`}
+                    alt={`${favoriteItem.name} Logo`}
                     draggable="false"
                   />
                   <div className={styles.favoriteItemDetails}>
-                    <h3>{`${favoriteItem.role}, ${favoriteItem.organisation}`}</h3>
-                    <p>{`${favoriteItem.startDate} — ${favoriteItem.endDate}`}</p>
+                    <h3>{`${favoriteItem.name}`}</h3>
+                    <p>{`${favoriteItem.origin}`}</p>
                     <ul>
-                      {favoriteItem.experiences.map((experience, id) => {
-                        return <li key={id}>{experience}</li>;
+                      {favoriteItem.attributes.map((attribute, id) => {
+                        return <li key={id}>{attribute}</li>;
                       })}
                     </ul>
                   </div>

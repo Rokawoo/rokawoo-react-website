@@ -1,26 +1,20 @@
 [
   {
-    "role": "Cybersecurity",
-    "organisation": "Rhoads Industries",
-    "startDate": "March, 2024",
-    "endDate": "Present",
-    "experiences": ["Secured information and sensitive data", "Found vulerabilities in system and personnel"],
+    "name": "Cybersecurity",
+    "origin": "March, 2024",
+    "attributes": ["Secured information and sensitive data", "Found vulerabilities in system and personnel"],
     "imageSrc": "favorite/rhoads.webp"
   },
   {
-    "role": "UI Designer",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2021",
-    "endDate": "Aug, 2022",
-    "experiences": ["Worked on Windows 11", "Designed the control panel"],
+    "name": "UI Designer",
+    "origin": "Aug, 2021",
+    "attributes": ["Worked on Windows 11", "Designed the control panel"],
     "imageSrc": "favorite/microsoft.webp"
   },
   {
-    "role": "SWE Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2020",
-    "endDate": "Jun, 2020",
-    "experiences": [
+    "name": "SWE Intern",
+    "origin": "Apr, 2020",
+    "attributes": [
       "Worked on component library",
       "Helped create UI components"
     ],
