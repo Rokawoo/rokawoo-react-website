@@ -13,7 +13,7 @@
     "description": "Virtual reality chat AI featuring advanced context awareness, including visual and auditory abilities. Hosted on VrChat.",
     "skills": ["OpenAI", "UDP/OSC", "Computer Vision"],
     "demo": null,
-    "source": "TEMPORARY"
+    "source": "https://github.com/Rokawoo/vrchai"
   },
   {
     "title": "Kerfus Tutor",
