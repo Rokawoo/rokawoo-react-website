@@ -1,42 +1,55 @@
 [
   {
-    "title": "HTML",
-    "imageSrc": "kins/html5.webp"
-  },
-  {
-    "title": "CSS",
+    "title": "Momiji",
     "imageSrc": "kins/css3.webp"
   },
   {
-    "title": "JS",
+    "title": "Lain",
+    "imageSrc": "kins/css3.webp"
+  },
+  {
+    "title": "Rei",
     "imageSrc": "kins/js.webp"
   },
   {
-    "title": "Python",
-    "imageSrc": "kins/python.webp"
-  },
-  {
-    "title": "React",
-    "imageSrc": "kins/react.webp"
-  },
-  {
-    "title": "Node",
-    "imageSrc": "kins/node.webp"
-  },
-  {
-    "title": "VS Code",
+    "title": "Madoka",
     "imageSrc": "kins/vsCode.webp"
   },
   {
-    "title": "Jetbrains",
+    "title": "Angel",
+    "imageSrc": "kins/python.webp"
+  },
+  {
+    "title": "Nana",
     "imageSrc": "kins/jetbrains.webp"
   },
   {
-    "title": "Git",
+    "title": "Kid",
+    "imageSrc": "kins/momiji.webp"
+  },
+  {
+    "title": "Fennec",
+    "imageSrc": "kins/react.webp"
+  },
+  {
+    "title": "Gwen",
+    "imageSrc": "kins/node.webp"
+  },
+  {
+    "title": "Amalie",
     "imageSrc": "kins/git.webp"
   },
   {
-    "title": "Figma",
+    "title": "Lumi",
+    "imageSrc": "kins/git.webp"
+  },
+  {
+    "title": "Tsumiki",
     "imageSrc": "kins/figma.webp"
+  },
+  {
+    "title": "Liru",
+    "imageSrc": "kins/git.webp"
   }
+
 ]

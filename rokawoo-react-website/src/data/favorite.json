@@ -1,23 +1,20 @@
 [
   {
-    "name": "Cybersecurity",
-    "origin": "March, 2024",
-    "attributes": ["Secured information and sensitive data", "Found vulerabilities in system and personnel"],
-    "imageSrc": "favorite/rhoads.webp"
+    "name": "Mari",
+    "origin": "@SuperiorMARI",
+    "attributes": ["Ameowzing Cat Girl~!", "Reminds Me of Python"],
+    "imageSrc": "favorite/mari.png"
   },
   {
-    "name": "UI Designer",
-    "origin": "Aug, 2021",
-    "attributes": ["Worked on Windows 11", "Designed the control panel"],
-    "imageSrc": "favorite/microsoft.webp"
+    "name": "Roka",
+    "origin": "@Rokawoo",
+    "attributes": ["Literally Puppycoded..", "Based? Based on What?"],
+    "imageSrc": "favorite/roka.png"
   },
   {
-    "name": "SWE Intern",
-    "origin": "Apr, 2020",
-    "attributes": [
-      "Worked on component library",
-      "Helped create UI components"
-    ],
-    "imageSrc": "favorite/netflix.webp"
+    "name": "Yuki",
+    "origin": "@Crunnchy",
+    "attributes": ["Awa Awa Awoo!?","She Lives in My Walls."],
+    "imageSrc": "favorite/yuki.png"
   }
 ]

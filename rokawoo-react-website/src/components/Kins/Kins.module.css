@@ -101,7 +101,9 @@
 }
 
 .favoriteItem img {
-  width: 50px;
+  width: 114px;
+  height: 114px;
+  border-radius: 10px;
 }
 
 .favoriteItemDetails {
@@ -120,10 +122,10 @@
 
 .favoriteItemDetails ul {
   margin-top: 6px;
-  list-style-position: inside;
-  font-size: 25px;
-  list-style-type: disc;
   margin-left: 17px;
+  font-size: 25px;
+  list-style-position: inside;
+  list-style-type: disc;
 }
 
 @media screen and (max-width: 1080px) {
