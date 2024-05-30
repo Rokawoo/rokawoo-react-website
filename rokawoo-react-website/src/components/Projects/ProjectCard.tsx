@@ -55,7 +55,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             Demo
           </a>
         )}
-        <a href={source} className={styles.link}>
+        <a href={source} className={styles.link} target="_blank" rel="noopener noreferrer">
           Source
         </a>
       </div>
