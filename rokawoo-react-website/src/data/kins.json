@@ -1,0 +1,42 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "kins/html5.webp"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "kins/css3.webp"
+  },
+  {
+    "title": "JS",
+    "imageSrc": "kins/js.webp"
+  },
+  {
+    "title": "Python",
+    "imageSrc": "kins/python.webp"
+  },
+  {
+    "title": "React",
+    "imageSrc": "kins/react.webp"
+  },
+  {
+    "title": "Node",
+    "imageSrc": "kins/node.webp"
+  },
+  {
+    "title": "VS Code",
+    "imageSrc": "kins/vsCode.webp"
+  },
+  {
+    "title": "Jetbrains",
+    "imageSrc": "kins/jetbrains.webp"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "kins/git.webp"
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "kins/figma.webp"
+  }
+]

@@ -2,15 +2,15 @@ import React from "react";
 
 import styles from "./Kins.module.css";
 
-import skills from "../../data/skills.json";
-import history from "../../data/history.json";
+import kins from "../../data/kins.json";
+import favorite from "../../data/favorite.json";
 
 import { getAssetUrl } from "../../utils";
 import { useSpinAnimation } from "./scripts/spin-animation";
 
 
 export const Kins = () => {
-  const { animatedSkills, handleHover, handleAnimationEnd } = useSpinAnimation(skills);
+  const { animatedKins, handleHover, handleAnimationEnd } = useSpinAnimation(kins);
 
   return (
     <div className={styles.backgroundColor}>
@@ -19,42 +19,42 @@ export const Kins = () => {
       <section className={styles.container} id="kins">
         <h2 className={styles.title}>Kins</h2>
         <div className={styles.content}>
-          <div className={styles.skills}>
-            {skills.map((skill, id) => {
+          <div className={styles.kins}>
+            {kins.map((kin, id) => {
               return (
                 <div
                   key={id}
-                  className={styles.skill}
+                  className={styles.kin}
                   onMouseEnter={() => handleHover(id)}
                   onAnimationEnd={() => handleAnimationEnd(id)}
                 >
-                  <div className={styles.skillImgContainer}>
+                  <div className={styles.kinImgContainer}>
                   <img
-                      src={getAssetUrl(skill.imageSrc)}
-                      alt={skill.title}
-                      className={animatedSkills[id] ? styles.animated : ""}
+                      src={getAssetUrl(kin.imageSrc)}
+                      alt={kin.title}
+                      className={animatedKins[id] ? styles.animated : ""}
                       draggable="false"
                   />
                   </div>
-                  <p>{skill.title}</p>
+                  <p>{kin.title}</p>
                 </div>
               );
             })}
           </div>
-          <ul className={styles.history}>
-            {history.map((historyItem, id) => {
+          <ul className={styles.favorite}>
+            {favorite.map((favoriteItem, id) => {
               return (
-                <li key={id} className={styles.historyItem}>
+                <li key={id} className={styles.favoriteItem}>
                   <img
-                    src={getAssetUrl(historyItem.imageSrc)}
-                    alt={`${historyItem.organisation} Logo`}
+                    src={getAssetUrl(favoriteItem.imageSrc)}
+                    alt={`${favoriteItem.organisation} Logo`}
                     draggable="false"
                   />
-                  <div className={styles.historyItemDetails}>
-                    <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
-                    <p>{`${historyItem.startDate} — ${historyItem.endDate}`}</p>
+                  <div className={styles.favoriteItemDetails}>
+                    <h3>{`${favoriteItem.role}, ${favoriteItem.organisation}`}</h3>
+                    <p>{`${favoriteItem.startDate} — ${favoriteItem.endDate}`}</p>
                     <ul>
-                      {historyItem.experiences.map((experience, id) => {
+                      {favoriteItem.experiences.map((experience, id) => {
                         return <li key={id}>{experience}</li>;
                       })}
                     </ul>

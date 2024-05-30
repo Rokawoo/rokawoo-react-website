@@ -5,7 +5,7 @@
     "startDate": "March, 2024",
     "endDate": "Present",
     "experiences": ["Secured information and sensitive data", "Found vulerabilities in system and personnel"],
-    "imageSrc": "history/rhoads.webp"
+    "imageSrc": "favorite/rhoads.webp"
   },
   {
     "role": "UI Designer",
@@ -13,7 +13,7 @@
     "startDate": "Aug, 2021",
     "endDate": "Aug, 2022",
     "experiences": ["Worked on Windows 11", "Designed the control panel"],
-    "imageSrc": "history/microsoft.webp"
+    "imageSrc": "favorite/microsoft.webp"
   },
   {
     "role": "SWE Intern",
@@ -24,6 +24,6 @@
       "Worked on component library",
       "Helped create UI components"
     ],
-    "imageSrc": "history/netflix.webp"
+    "imageSrc": "favorite/netflix.webp"
   }
 ]

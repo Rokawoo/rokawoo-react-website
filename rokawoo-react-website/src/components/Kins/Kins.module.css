@@ -30,14 +30,14 @@
   margin-top: 14px;
 }
 
-.skills {
+.kins {
   width: 45%;
   display: flex;
   flex-wrap: wrap;
   gap: 37px;
 }
 
-.skill {
+.kin {
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@
   gap: 11px;
 }
 
-.skillImgContainer {
+.kinImgContainer {
   background-color: var(--color-primary);
   border-radius: 100%;
   display: flex;
@@ -55,11 +55,11 @@
   height: 120px;
 }
 
-.skillImgContainer img {
+.kinImgContainer img {
   width: 75px;
 }
 
-.skillImgContainer img.animated {
+.kinImgContainer img.animated {
   animation: spin 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
@@ -69,20 +69,20 @@
   }
 }
 
-.skill p {
+.kin p {
   font-size: 25px;
   font-family: var(--font-comfortaa);
   font-weight: 500;
 }
 
-.history {
+.favorite {
   width: 45%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.historyItem {
+.favoriteItem {
   z-index: 1;
   display: flex;
   flex-direction: row;
@@ -100,25 +100,25 @@
   padding: 24px;
 }
 
-.historyItem img {
+.favoriteItem img {
   width: 50px;
 }
 
-.historyItemDetails {
+.favoriteItemDetails {
   font-family: var(--font-comfortaa);
 }
 
-.historyItemDetails h3 {
+.favoriteItemDetails h3 {
   font-size: 30px;
   font-weight: 500;
 }
 
-.historyItemDetails p {
+.favoriteItemDetails p {
   font-size: 20px;
   font-weight: 300;
 }
 
-.historyItemDetails ul {
+.favoriteItemDetails ul {
   margin-top: 6px;
   list-style-position: inside;
   font-size: 25px;
@@ -137,13 +137,13 @@
     gap: 34px;
   }
 
-  .skills {
+  .kins {
     width: 100%;
     flex-direction: row;
     justify-content: center;
   }
 
-  .history {
+  .favorite {
     width: 100%;
     gap: 9px;
   }
