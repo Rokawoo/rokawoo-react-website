@@ -1,4 +1,4 @@
-import { useSpring, SpringConfig } from "react-spring";
+import { useSpring, SpringConfig } from "@react-spring/web";
 import { useCallback } from "react";
 
 const BUFFER = 50;
