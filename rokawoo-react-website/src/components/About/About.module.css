@@ -123,6 +123,11 @@
   transition: 0.4s;
 }
 
+.aboutItem img {
+  width: 79px;
+  height: 79px;
+}
+
 .aboutItem h3 {
   font-size: 25px;
   font-weight: 600;
