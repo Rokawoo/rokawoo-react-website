@@ -7,27 +7,25 @@
   <p>By Rokawoo</p>
 </div>
 
-# [Preview the Site! (In-Dev)]()
+# [Preview the Site! (Click Me)](https://rokawoo.com/)
 
 > [!NOTE]
 > 🌸 Welcome only the most ameowzing place on the web!
 
 **About my Rokawoo React Website**
 
-Rokawoo React is designed to be my new homepage and my portfolio site.
+Rokawoo React is designed to be my new homepage all about me!
+
+[Demo](https://github.com/Rokawoo/rokawoo-react-website/assets/129356996/b8d3bfb0-d189-4c8b-90ce-2dfd92275647)
 
 **Features**
 
 - **Super Based Design**: Yeah, graphic design is my passion. 🐸!!
-- **Reactive**: An experiance that tailors itself to you! Self arranging components.
+- **Reactive**: An experiance that tailors itself to you! Self-arranging components.
 
-
-**How to Get Started**
-
-1. (In-Dev)
 
 ## 🛠 Technologies and Tools Used
 
 This project was built using the following technologies and tools:
 
-- **HTML/CSS/TypeScript/React**: The core building blocks of the website.
+- **HTML/CSS/TypeScript/React/React-Spring**: The core building blocks of the website.
