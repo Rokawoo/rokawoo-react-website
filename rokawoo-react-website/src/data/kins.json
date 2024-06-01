@@ -1,50 +1,50 @@
 [
   {
     "title": "Momiji",
-    "imageSrc": "momiji.webp"
+    "imageSrc": "kins/momiji.png"
   },
   {
     "title": "Lain",
-    "imageSrc": "lain.webp"
+    "imageSrc": "kins/lain.png"
   },
   {
     "title": "Rei",
-    "imageSrc": "rei.webp"
+    "imageSrc": "kins/rei.png"
   },
   {
     "title": "Madoka",
-    "imageSrc": "madoka.webp"
+    "imageSrc": "kins/madoka.png"
   },
   {
     "title": "Angel",
-    "imageSrc": "angel.webp"
+    "imageSrc": "kins/angel.png"
   },
   {
     "title": "Nana",
-    "imageSrc": "nana.webp"
+    "imageSrc": "kins/nana.png"
   },
   {
     "title": "Kid",
-    "imageSrc": "kid.webp"
+    "imageSrc": "kins/kid.png"
   },
   {
     "title": "Fennec",
-    "imageSrc": "fennec.webp"
+    "imageSrc": "kins/fennec.png"
   },
   {
     "title": "Gwen",
-    "imageSrc": "gwen.webp"
+    "imageSrc": "kins/gwen.png"
   },
   {
     "title": "Amalie",
-    "imageSrc": "amalie.webp"
+    "imageSrc": "kins/amalie.png"
   },
   {
     "title": "Chihiro",
-    "imageSrc": "chihiro.webp"
+    "imageSrc": "kins/chihiro.png"
   },
   {
     "title": "Lumi",
-    "imageSrc": "lumi.webp"
+    "imageSrc": "kins/lumi.png"
   }
 ]
