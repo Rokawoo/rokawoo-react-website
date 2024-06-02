@@ -94,6 +94,7 @@
   }
 
   .description {
+    margin-left: 15%;
     font-size: 26px;
   }
 
@@ -101,5 +102,16 @@
     margin-left: 0;
     max-width: 100%;
     margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 12.2vw;
+  }
+
+  .description {
+    margin-left: calc((100% - 40%) / 2);
+    font-size: 5.2vw;
   }
 }

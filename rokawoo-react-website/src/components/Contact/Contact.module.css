@@ -110,7 +110,11 @@
     font-size: 6vw;
   }
 
+  .links {
+    align-items: flex-start;
+  }
+  
   .links a {
-    font-size: 4vw;
+    font-size: 4.8vw;
   }
 }

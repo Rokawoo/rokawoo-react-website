@@ -134,6 +134,8 @@
 @media screen and (max-width: 1080px) {
   .container {
     padding-bottom: 54px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .content {
