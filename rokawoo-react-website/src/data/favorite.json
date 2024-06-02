@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Mari",
+    "origin": "@SuperiorMARI",
+    "attributes": ["Ameowzing Cat Girl~!", "Reminds Me of Python"],
+    "imageSrc": "favorite/mari.webp"
+  },
+  {
+    "name": "Roka",
+    "origin": "@Rokawoo",
+    "attributes": ["Literally Puppycoded..", "Based? Based on What?"],
+    "imageSrc": "favorite/roka.webp"
+  },
+  {
+    "name": "Yuki",
+    "origin": "@Crunnchy",
+    "attributes": ["Erm... I Eated It Already","+9999999 Garlic Bread"],
+    "imageSrc": "favorite/yuki.webp"
+  }
+]

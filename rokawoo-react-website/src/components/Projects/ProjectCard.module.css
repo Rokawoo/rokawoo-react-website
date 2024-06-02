@@ -112,7 +112,7 @@
 
 .link:hover {
   transform: translateY(-2px) rotate(-2deg);
-  animation: shake 0.5s ease-in-out infinite;
+  animation: shake 500ms ease-in-out infinite;
   background: var(--color-dark);
   background: repeating-linear-gradient(
     45deg,
