@@ -172,7 +172,21 @@
   }
 
   .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  .aboutItems {
+    padding-right: 20px;
+  }
+
+  .aboutItem:hover .aboutItemText {
+    transform: translateX(0);
+  }
+
+  .aboutItem img {
+    display: none;
   }
 }
