@@ -94,18 +94,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 16vw;
-  }
-
-  .text p {
-    font-size: 8vw;
   }
   
   .links {
     align-items: center;
   }
+}
 
-  .links a {
+@media screen and (max-width: 480px) {
+  .text {
+    font-size: 14vw;
+  }
+
+  .text p {
     font-size: 6vw;
+  }
+
+  .links {
+    align-items: flex-start;
+  }
+  
+  .links a {
+    font-size: 4.8vw;
   }
 }
