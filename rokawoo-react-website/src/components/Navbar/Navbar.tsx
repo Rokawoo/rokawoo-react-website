@@ -16,8 +16,8 @@ export const Navbar = () => {
     useEffect(() => {
         if (titleRef.current) {
             const textScramble = new TextScramble(titleRef.current as HTMLElement, [
-                'Wεlcοmε Tο Μγ Rοκαspacε <3',
                 'Hοmε Ιs Α Hουsε Wιth Α Hεαrτ',
+                'Wεlcοmε Tο Μγ Rοκαspacε <3',
                 'Ι\'m Jυsτ Sο Hαppγ Tο Sεε Υου'
             ]);
 
