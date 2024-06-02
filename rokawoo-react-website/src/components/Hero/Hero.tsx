@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./Hero.module.css";
 
 import Typewriter from "./scripts/Typewriter";
@@ -16,9 +14,9 @@ export const Hero = () => {
         <section className={styles.container}>
           <div className={styles.content}>
             <h1 className={styles.title}>Hello, I'm RΩKΔ</h1>
-            <p className={styles.description}>
+            <div className={styles.description}>
               <Typewriter />
-            </p>
+            </div>
           </div>
           <img
             src={getAssetUrl("hero/heroImage.webp")}

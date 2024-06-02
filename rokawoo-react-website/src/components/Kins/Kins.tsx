@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./Kins.module.css";
 
 import kins from "../../data/kins.json";
