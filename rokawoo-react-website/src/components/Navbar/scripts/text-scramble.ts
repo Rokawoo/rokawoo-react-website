@@ -13,8 +13,8 @@ class TextScramble {
         this.strings = strings;
         this.chars = '!<>-_\\/[]{}—=+*^?#________';
         this.queue = [];
-        this.setText(this.strings[0]);
         this.update = this.update.bind(this);
+        this.setText(this.strings[0]);
     }
 
     public setText(newText: string): Promise<void> {
