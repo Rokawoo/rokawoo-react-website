@@ -14,9 +14,9 @@ export const Hero = () => {
         <section className={styles.container}>
           <div className={styles.content}>
             <h1 className={styles.title}>Hello, I'm RΩKΔ</h1>
-            <p className={styles.description}>
+            <div className={styles.description}>
               <Typewriter />
-            </p>
+            </div>
           </div>
           <img
             src={getAssetUrl("hero/heroImage.webp")}
