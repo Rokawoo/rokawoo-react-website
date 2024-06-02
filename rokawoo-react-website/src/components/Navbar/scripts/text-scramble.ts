@@ -8,13 +8,20 @@ class TextScramble {
     private frameRequest: number = 0;
     private resolve!: () => void;
 
+    private readonly animationDelay: number = 4500;
+
     constructor(el: HTMLElement, strings: string[]) {
         this.el = el;
         this.strings = strings;
         this.chars = '!<>-_\\/[]{}—=+*^?#________';
         this.queue = [];
         this.update = this.update.bind(this);
-        this.setText(this.strings[0]);
+    }
+
+    public start(): void {
+        setTimeout(() => {
+            this.setText(this.strings[0]);
+        }, this.animationDelay);
     }
 
     public setText(newText: string): Promise<void> {
@@ -67,7 +74,7 @@ class TextScramble {
         } else {
             this.resolve();
             this.currentStringIndex = (this.currentStringIndex + 1) % this.strings.length;
-            this.startNextTextAnimation(4500);
+            this.startNextTextAnimation(this.animationDelay);
         }
     }
 

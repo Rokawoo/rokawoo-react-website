@@ -29,11 +29,11 @@ export const use3DSpring = () => {
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const { clientX: x, clientY: y } = e;
-    set({ xys: calc(x, y, rect) });
+    set.start({ xys: calc(x, y, rect) });
   }, [set]);
 
   const handleMouseLeave = useCallback(() => {
-    set({ xys: [0, 0, 1] });
+    set.start({ xys: [0, 0, 1] });
   }, [set]);
 
   return { props, handleMouseMove, handleMouseLeave };
