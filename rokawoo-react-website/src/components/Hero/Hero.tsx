@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./Hero.module.css";
 
 import Typewriter from "./scripts/Typewriter";
