@@ -111,7 +111,7 @@
   }
 
   .description {
-    margin-left: calc((100% - 40%) / 2);
+    margin-left: 30%;
     font-size: 5.2vw;
   }
 }
