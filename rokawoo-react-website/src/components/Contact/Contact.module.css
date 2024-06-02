@@ -94,9 +94,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 16vw;
+  }
+
+  .text p {
+    font-size: 8vw;
   }
   
   .links {
     align-items: center;
+  }
+
+  .links a {
+    font-size: 6vw;
   }
 }
