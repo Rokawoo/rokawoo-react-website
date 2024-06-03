@@ -16,7 +16,12 @@ class TextScramble {
         this.chars = '!<>-_\\/[]{}—=+*^?#________';
         this.queue = [];
         this.update = this.update.bind(this);
-        this.setText(this.strings[0]);
+    }
+
+    public start(): void {
+        setTimeout(() => {
+            this.setText(this.strings[0]);
+        }, this.animationDelay);
     }
 
     public setText(newText: string): Promise<void> {
