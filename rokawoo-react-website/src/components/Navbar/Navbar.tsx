@@ -24,6 +24,8 @@ export const Navbar = () => {
             const [title, image] = greetAgent();
             titleRef.current.innerText = title;
             setBrowserImage(image);
+            
+            textScramble.start();
 
             return () => {
                 if (textScramble) {
