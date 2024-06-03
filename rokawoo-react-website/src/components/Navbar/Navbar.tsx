@@ -25,6 +25,8 @@ export const Navbar = () => {
             titleRef.current.innerText = title;
             setBrowserImage(image);
 
+            textScramble.start()
+
             return () => {
                 if (textScramble) {
                     textScramble.setText(titleRef.current?.textContent || "Welcome to Rokaspace");

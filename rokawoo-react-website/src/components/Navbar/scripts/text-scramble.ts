@@ -18,11 +18,11 @@ class TextScramble {
         this.update = this.update.bind(this);
     }
 
-    public start(): void {
-        setTimeout(() => {
-            this.setText(this.strings[0]);
-        }, this.animationDelay);
+    public async start(): Promise<void> {
+        await new Promise(resolve => setTimeout(resolve, this.animationDelay));
+        this.setText(this.strings[0]);
     }
+
 
     public setText(newText: string): Promise<void> {
         const oldText = this.el.textContent || '';
