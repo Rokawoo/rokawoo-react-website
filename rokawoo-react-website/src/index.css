@@ -10,10 +10,10 @@ html {
 }
 
 body {
-  cursor: url('/cursor/idle.cur'), auto;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat924.cur), auto;
 }
 
 a:hover,
 button:hover {
-  cursor: url('/cursor/pointer.cur'), auto;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat928.cur), pointer;
 }
