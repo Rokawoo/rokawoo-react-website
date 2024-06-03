@@ -10,10 +10,10 @@ html {
 }
 
 body {
-  cursor: url('/cursor/idle.cur'), auto;
+  cursor: url('../public/cursor/idle.cur'), url('../public/cursor/idle.webp'), auto;
 }
 
 a:hover,
 button:hover {
-  cursor: url('/cursor/pointer.cur'), auto;
+  cursor: url('../public/cursor/pointer.cur'), url('../public/cursor/pointer.webp'), pointer;
 }
