@@ -22,10 +22,9 @@ export const Navbar = () => {
             ]);
 
             const [title, image] = greetAgent();
-            titleRef.current.innerText = title;
+                        
+            textScramble.start(title);
             setBrowserImage(image);
-
-            textScramble.start()
 
             return () => {
                 if (textScramble) {
