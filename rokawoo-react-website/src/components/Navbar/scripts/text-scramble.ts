@@ -21,7 +21,7 @@ class TextScramble {
     public async start(initialTitle: string): Promise<void> {
         await this.setText(initialTitle);
         await new Promise(resolve => setTimeout(resolve, this.animationDelay));
-        this.setText(this.strings[0]);
+        this.setText(this.strings[1]);
     }
 
     public setText(newText: string): Promise<void> {
