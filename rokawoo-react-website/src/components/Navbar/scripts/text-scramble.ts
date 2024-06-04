@@ -24,7 +24,6 @@ class TextScramble {
         this.setText(this.strings[0]);
     }
 
-
     public setText(newText: string): Promise<void> {
         const oldText = this.el.textContent || '';
         const length = Math.max(oldText.length, newText.length);
