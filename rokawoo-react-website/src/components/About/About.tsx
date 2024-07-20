@@ -41,7 +41,7 @@ export const About = () => {
               <img src={getAssetUrl("about/m.webp")} alt="m-icon" draggable="false"/>
               <div className={styles.aboutItemText}>
                 <h3>Likes</h3>
-                <p>Anime: Evangelion, SE Lain, Elfen Lied, Japari, FLCL, Soul Eater…<br />Games: Omori, OneShot, VR Chat, Sky: CTOL, Minecraft, Leauge…</p>
+                <p>Anime: Evangelion, SE Lain, Elfen Lied, Japari, FLCL, Soul Eater…<br />Games: Omori, OneShot, VRChat, Sky: CTOL, Minecraft, League…</p>
               </div>
             </li>
             <li className={styles.aboutItem}>
