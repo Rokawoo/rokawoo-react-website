@@ -6,7 +6,15 @@
     "skills": ["Research Study", "AI", "Comp. Simulation"],
     "demo": null, 
     "source": "https://github.com/Rokawoo/cybernetic-automata"
-  },  
+  },
+  {
+    "title": "Cartograph Automata",
+    "videoSrc": "projects/cartographAutomata.mp4",
+    "description": "Autonomous mobile robot with obstacle avoidance and contextual navigation; AI in Industry; Philly Codefest '25.",
+    "skills": ["Comp. Vision", "GPS", "Philly Codefest 2025"],
+    "demo": null, 
+    "source": "https://github.com/Rokawoo/cartograph-automata"
+  },
   {
     "title": "VRChAI (Roka AI)",
     "videoSrc": "projects/vrChAi.mp4",
@@ -21,7 +29,7 @@
     "description": "Unity Editor tools for VRChat avatar animation workflows. Batch rename, transfer, and manage animation clips.",
     "skills": ["C#", "Unity Editor", "RegEx", "File I/O"],
     "demo": "https://rokawoo.github.io/vpm-repos/",
-    "source": "https://github.com/rokawoo/roka-animation-tools"
+    "source": "https://github.com/Rokawoo/VRCAnimationPropertyRenamer"
   },
   {
     "title": "Kerfus Tutor",
