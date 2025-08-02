@@ -8,7 +8,7 @@ const Typewriter: React.FC = () => {
 
   const text = `var object = {
     name: 'Roka',
-    age: '20',
+    age: '21',
     location: 'Philadelphia, PA',
     properties: ['he', 'they', 'UTC-04:00']
 };`;
