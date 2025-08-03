@@ -16,7 +16,6 @@ export const Showcase = () => {
   const [viewMode, setViewMode] = useState<ViewMode>('experience');
   const [isTransitioning, setIsTransitioning] = useState(false);
   
-  // Data selection
   const { icons, blocks } = useDataSelector(viewMode, {
     techstack,
     kins,
@@ -24,10 +23,8 @@ export const Showcase = () => {
     favorite
   });
   
-  // Animation and interaction management
   const { animatedIcons, handleHover, handleAnimationEnd } = useSpinAnimation(icons);
   
-  // View mode transition management
   const { toggleViewMode } = useViewModeManager({
     viewMode,
     isTransitioning,
@@ -35,7 +32,6 @@ export const Showcase = () => {
     setIsTransitioning
   });
 
-  // Title state management
   const { getTitlePartState } = useMemo(() => 
     createTitleStateManager(viewMode), 
     [viewMode]
