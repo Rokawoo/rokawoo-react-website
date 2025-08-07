@@ -1,6 +1,18 @@
 [
   {
-    "title": "",
+    "title": "ALGOL",
+    "imageSrc": ""
+  },
+  {
+    "title": "C",
+    "imageSrc": ""
+  },
+  {
+    "title": "PYTHON",
+    "imageSrc": ""
+  },
+  {
+    "title": "TF",
     "imageSrc": ""
   },
   {
@@ -15,20 +27,21 @@
     "title": "",
     "imageSrc": ""
   },
+  
   {
-    "title": "",
+    "title": "REACT",
     "imageSrc": ""
   },
   {
-    "title": "",
+    "title": "NODE.JS",
     "imageSrc": ""
   },
   {
-    "title": "",
+    "title": "HTML",
     "imageSrc": ""
   },
   {
-    "title": "",
+    "title": "CSS",
     "imageSrc": ""
   }
 ]
