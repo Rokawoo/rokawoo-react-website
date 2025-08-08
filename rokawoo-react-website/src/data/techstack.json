@@ -1,47 +1,50 @@
 [
   {
     "title": "ALGOL",
-    "imageSrc": ""
+    "imageSrc": "techstack/algol.webp"
   },
   {
     "title": "C",
-    "imageSrc": ""
+    "imageSrc": "techstack/c.svg"
   },
   {
     "title": "PYTHON",
-    "imageSrc": ""
+    "imageSrc": "techstack/python.svg"
   },
   {
     "title": "TF",
-    "imageSrc": ""
+    "imageSrc": "techstack/tensorflow.svg"
   },
   {
-    "title": "",
-    "imageSrc": ""
+    "title": "TS",
+    "imageSrc": "techstack/typescript.svg"
   },
   {
-    "title": "",
-    "imageSrc": ""
+    "title": "DOCKER",
+    "imageSrc": "techstack/docker.svg"
   },
   {
-    "title": "",
-    "imageSrc": ""
+    "title": "OPENCV",
+    "imageSrc": "techstack/opencv.svg"
   },
-  
+  {
+    "title": "WEBOTS",
+    "imageSrc": "techstack/webots.webp"
+  },
   {
     "title": "REACT",
-    "imageSrc": ""
+    "imageSrc": "techstack/react.svg"
   },
   {
     "title": "NODE.JS",
-    "imageSrc": ""
+    "imageSrc": "techstack/nodejs.svg"
   },
   {
-    "title": "HTML",
-    "imageSrc": ""
+    "title": "GIT",
+    "imageSrc": "techstack/git.svg"
   },
   {
-    "title": "CSS",
-    "imageSrc": ""
+    "title": "VSTUDIO",
+    "imageSrc": "techstack/visualstudio.svg"
   }
 ]
