@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Algol",
+    "imageSrc": "techstack/algol.webp"
+  },
+  {
+    "title": "C",
+    "imageSrc": "techstack/c.svg"
+  },
+  {
+    "title": "Python",
+    "imageSrc": "techstack/python.svg"
+  },
+  {
+    "title": "TFlow",
+    "imageSrc": "techstack/tensorflow.svg"
+  },
+  {
+    "title": "TScript",
+    "imageSrc": "techstack/typescript.svg"
+  },
+  {
+    "title": "Docker",
+    "imageSrc": "techstack/docker.svg"
+  },
+  {
+    "title": "OpenCV",
+    "imageSrc": "techstack/opencv.svg"
+  },
+  {
+    "title": "Webots",
+    "imageSrc": "techstack/webots.webp"
+  },
+  {
+    "title": "React",
+    "imageSrc": "techstack/react.svg"
+  },
+  {
+    "title": "Node.js",
+    "imageSrc": "techstack/nodejs.svg"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "techstack/git.svg"
+  },
+  {
+    "title": "VStudio",
+    "imageSrc": "techstack/visualstudio.svg"
+  }
+]
