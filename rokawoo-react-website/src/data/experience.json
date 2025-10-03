@@ -1,6 +1,12 @@
 [
   {
     "name": "Software Engineer",
+    "origin": "@Lockheed Martin Space",
+    "attributes": ["Mission-critical systems", "Aerospace applications / Defense"],
+    "imageSrc": "experience/lockheedmartinspace.webp"
+  },
+  {
+    "name": "Software Engineer",
     "origin": "@Unisys",
     "attributes": ["Enterprise software development", "Automation tools / Systems engineering"],
     "imageSrc": "experience/unisys.svg"

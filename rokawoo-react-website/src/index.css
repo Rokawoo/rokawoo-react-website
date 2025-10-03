@@ -14,6 +14,8 @@ body {
 }
 
 a:hover,
-button:hover {
+button:hover,
+.clickable:hover {
   cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat928.cur), pointer;
 }
+

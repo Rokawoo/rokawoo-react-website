@@ -14,6 +14,7 @@
 }
 
 .title {
+  display: inline-block;
   position: relative;
   color: var(--color-text-secondary);
   font-size: 35px;

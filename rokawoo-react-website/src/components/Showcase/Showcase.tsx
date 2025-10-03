@@ -42,7 +42,7 @@ export const Showcase = () => {
       <div className={`${styles.wave} ${styles.primary}`}></div>
 
       <section className={styles.container} id="showcase">
-        <h2 className={styles.title} onClick={toggleViewMode}>
+        <h2 className={`${styles.title} clickable`} onClick={toggleViewMode}>
           <span 
             className={`${styles.titleContent} ${isTransitioning ? styles.transitioning : ''}`}
           >
