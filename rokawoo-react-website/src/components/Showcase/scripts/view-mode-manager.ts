@@ -5,7 +5,7 @@ export type ViewMode = 'experience' | 'kins';
 const ANIMATION_DURATION = 250;
 
 const createAnimationController = () => {
-  let timeoutId: NodeJS.Timeout | null = null;
+  let timeoutId: number | null = null;
   
   const scheduleStateUpdate = (callback: () => void, delay: number): void => {
     if (timeoutId) {
