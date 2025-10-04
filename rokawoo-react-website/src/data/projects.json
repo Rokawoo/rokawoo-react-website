@@ -1,4 +1,12 @@
 [
+    {
+    "title": "VLAs for Manipulation",
+    "videoSrc": "projects/vlasForManipulation.mp4",
+    "description": "Researching Vision-Language Action models for general robotics with Dr. Lifeng Zhou. VIP Research 2025",
+    "skills": ["Research Study", "AI", "Robotics", "VLA"],
+    "demo": null, 
+    "source": "https://arxiv.org/abs/2103.00020"
+  },
   {
     "title": "Cybernetic Automata",
     "videoSrc": "projects/cyberneticAutomata.mp4",
