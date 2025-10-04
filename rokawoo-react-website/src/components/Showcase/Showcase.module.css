@@ -231,3 +231,48 @@
     max-height: 500px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .block {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 16px;
+    gap: 16px;
+  }
+
+  .block img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .blockContent h3 {
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+
+  .blockContent p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .blockContent ul {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .blockContent ul li {
+    padding: 6px 0;
+    line-height: 0.5;
+    word-wrap: break-word;
+    text-indent: -1.2em;
+    padding-left: 1.2em;
+  }
+
+  .blocks {
+    gap: 16px;
+  }
+}
