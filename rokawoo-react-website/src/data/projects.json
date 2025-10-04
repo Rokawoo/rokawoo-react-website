@@ -1,5 +1,5 @@
 [
-    {
+  {
     "title": "VLAs for Manipulation",
     "videoSrc": "projects/vlasForManipulation.mp4",
     "description": "Researching Vision-Language Action models for general robotics with Dr. Lifeng Zhou. VIP Research 2025",
@@ -32,6 +32,14 @@
     "source": "https://github.com/Rokawoo/vrchai"
   },
   {
+    "title": "Anime.GF",
+    "videoSrc": "projects/animeGf.mp4",
+    "description": "Conversational AI startup with Cyan, serving 15K+ monthly active users. Custom-trained LLM, character studio, tag-based discovery, multi-chat.",
+    "skills": ["React", "Supabase", "Startup", "Tailwind"],
+    "demo": "https://anime.gf",
+    "source": "https://github.com/cyanff/anime.gf"
+  },
+  {
     "title": "VRC Avatar Anim. Tools",
     "videoSrc": "projects/vrcAnimationPropertyRenamer.mp4",
     "description": "Unity Editor tools for VRChat avatar animation workflows. Batch rename, transfer, and manage animation clips.",
@@ -46,14 +54,6 @@
     "skills": ["OpenAI", "STT/TTS", "Philly Codefest 2024"],
     "demo": null,
     "source": "https://github.com/Rokawoo/kerfus-tutor"
-  },
-  {
-    "title": "Wall & Ball Game",
-    "videoSrc": "projects/wallBallGame.mp4",
-    "description": "Enter a philosophical conundrum where you are your worst opponent in the style of a retro pong game.",
-    "skills": ["Game Dev", "OPP", "Pygame", "Python"],
-    "demo": null,
-    "source": "https://github.com/Rokawoo/wall-ball-game"
   },
   {
     "title": "Neocities Landing Page",
@@ -78,7 +78,15 @@
     "skills": ["Fullstack", "UI/UX", "Prompt Engineering"],
     "demo": null,
     "source": "https://github.com/Rokawoo/drexel-recommender"
-  },  
+  },
+  {
+    "title": "Wall & Ball Game",
+    "videoSrc": "projects/wallBallGame.mp4",
+    "description": "Enter a philosophical conundrum where you are your worst opponent in the style of a retro pong game.",
+    "skills": ["Game Dev", "OPP", "Pygame", "Python"],
+    "demo": null,
+    "source": "https://github.com/Rokawoo/wall-ball-game"
+  },
   {
     "title": "Certificate Rec. Logger",
     "videoSrc": "projects/certificateRecordLogger.mp4",
