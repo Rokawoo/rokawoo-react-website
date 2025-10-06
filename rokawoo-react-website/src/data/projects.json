@@ -34,7 +34,7 @@
   {
     "title": "Anime.GF",
     "videoSrc": "projects/animeGf.mp4",
-    "description": "Conversational AI startup with Cyan, serving 15K+ monthly active users. Custom-trained LLM, character studio, tag-based discovery, multi-chat.",
+    "description": "Conversational AI startup with Cyan, serving 15K+ monthly active users. Custom-trained LLM, studio, tags, multi-chat.",
     "skills": ["React", "Supabase", "Startup", "Tailwind"],
     "demo": "https://anime.gf",
     "source": "https://github.com/cyanff/anime.gf"
