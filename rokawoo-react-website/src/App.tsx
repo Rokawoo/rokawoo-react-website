@@ -2,7 +2,8 @@ import React from 'react';
 
 import styles from "./App.module.css"
 
-import { Navbar } from "./components/Navbar/Navbar";
+import { SEO } from './components/SEO';
+import { Navbar } from './components/Navbar/Navbar';
 import { Hero } from './components/Hero/Hero';
 import { About } from './components/About/About';
 import { Showcase } from './components/Showcase/Showcase';
@@ -13,6 +14,8 @@ import { Contact} from './components/Contact/Contact';
 const App: React.FC = () => {
   return (
     <div className={styles.App}>
+      <SEO />
+
       <Navbar />
       <Hero />
       <About />
