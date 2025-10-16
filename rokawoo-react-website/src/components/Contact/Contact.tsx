@@ -17,7 +17,9 @@ export const Contact = () => {
             <img 
               src={getAssetUrl("contact/emailIcon.webp")}
               alt="email-icon" 
-              draggable="false"/>
+              draggable="false"
+              loading="lazy"
+            />
             <a href="mailto:meowbox@rokawoo.com">meowbox@rokawoo.com</a>
           </li>
           <li className={styles.link}>
@@ -25,6 +27,7 @@ export const Contact = () => {
               src={getAssetUrl("contact/githubIcon.webp")}
               alt="github-icon"
               draggable="false"
+              loading="lazy"
             />
             <a href="https://www.github.com/Rokawoo">github.com/Rokawoo</a>
           </li>
@@ -33,6 +36,7 @@ export const Contact = () => {
               src={getAssetUrl("contact/discordIcon.webp")}
               alt="discord-icon"
               draggable="false"
+              loading="lazy"
             />
             <a href="https://discord.com/">.roka.</a>
           </li>

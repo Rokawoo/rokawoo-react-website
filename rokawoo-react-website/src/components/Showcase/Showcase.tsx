@@ -82,6 +82,7 @@ export const Showcase = () => {
                     alt={icon.title}
                     className={animatedIcons[id] ? styles.animated : ""}
                     draggable="false"
+                    loading="lazy"
                   />
                 </div>
                 <p>{icon.title}</p>
@@ -96,6 +97,7 @@ export const Showcase = () => {
                   src={getAssetUrl(block.imageSrc)}
                   alt={`${block.name} Logo`}
                   draggable="false"
+                  loading="lazy"
                 />
                 <div className={styles.blockContent}>
                   <h3>{block.name}</h3>
