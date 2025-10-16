@@ -1,6 +1,8 @@
 import { useSpring, SpringConfig } from "@react-spring/web";
 import { useCallback } from "react";
 
+import { isTouchDevice } from "../../../utils";
+
 const BUFFER = 50;
 const PERSPECTIVE = 500;
 const ROTATE_X_FACTOR = 0.25;
@@ -21,20 +23,24 @@ export const calc = (
 ];
 
 export const use3DSpring = () => {
+  const isTouch = isTouchDevice();
+
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 } as SpringConfig,
   }));
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (isTouch) return;
     const rect = e.currentTarget.getBoundingClientRect();
     const { clientX: x, clientY: y } = e;
     set.start({ xys: calc(x, y, rect) });
-  }, [set]);
+  }, [isTouch, set]);
 
   const handleMouseLeave = useCallback(() => {
+    if (isTouch) return;
     set.start({ xys: [0, 0, 1] });
-  }, [set]);
+  }, [isTouch, set]);
 
   return { props, handleMouseMove, handleMouseLeave };
 };
