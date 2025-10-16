@@ -32,7 +32,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       style={{ transform: props.xys.to(trans) }}
     >
       <video
-        src={getAssetUrl(videoSrc)}
+        data-src={getAssetUrl(videoSrc)}
         className={styles.vid}
         draggable="false"
         autoPlay
