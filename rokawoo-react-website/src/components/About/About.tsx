@@ -18,7 +18,7 @@ export const About = () => {
     <div className={styles.backgroundColor}>
       <div className={`${styles.wave} ${styles.secondary}`}></div>
       <ScrollingText 
-        marqueeText="Azazal Meow ฅ^>⩊<^ฅ"
+        marqueeText="RΩKΔ /ᐠ > ˕ <マ ₊˚⊹♡"
         color="secondary"
       />
 
