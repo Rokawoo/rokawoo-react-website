@@ -13,6 +13,13 @@ body {
   cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat924.cur), auto;
 }
 
+img {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
 a:hover,
 button:hover,
 .clickable:hover {
