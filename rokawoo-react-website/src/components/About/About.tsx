@@ -2,6 +2,7 @@ import styles from "./About.module.css";
 
 import { getAssetUrl } from "../../utils";
 import { useBounceClickAnimation } from "./scripts/bounce-click-animation";
+import ScrollingText from "../ScrollingText/ScrollingText";
 
 
 export const About = () => {
@@ -16,6 +17,10 @@ export const About = () => {
   return (
     <div className={styles.backgroundColor}>
       <div className={`${styles.wave} ${styles.secondary}`}></div>
+      <ScrollingText 
+        marqueeText="Azazal Meow ฅ^>⩊<^ฅ"
+        color="secondary"
+      />
 
       <section className={styles.container} id="about">
         <h2 className={styles.title}>About</h2>
