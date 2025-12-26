@@ -8,19 +8,19 @@
   {
     "name": "Software Engineer",
     "origin": "@Unisys",
-    "attributes": ["Enterprise software development", "Automation tools / Systems engineering"],
+    "attributes": ["Enterprise software development", "Automation tools / Sys Engr"],
     "imageSrc": "experience/unisys.svg"
   },
   {
     "name": "Information Security",
     "origin": "@Rhoads Industries, General Dynamics",
-    "attributes": ["Security posture analysis & proposals", "NIST compliance / Workflow automation"],
+    "attributes": ["Security posture analysis & proposals", "NIST compliance / Automation"],
     "imageSrc": "experience/rhoadsindustries.svg"
   },
   {
     "name": "Research Assistant",
     "origin": "@Drexel University, VIP & STAR Scholars",
-    "attributes": ["AI & Emergent behavior studies","Model Architecture / Robotics Simulation"],
+    "attributes": ["AI & Emergent behavior studies","Model Architecture / Robotics Sim"],
     "imageSrc": "experience/drexelstarscholar.svg"
   }
 ]
