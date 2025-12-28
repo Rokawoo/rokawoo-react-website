@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState, useMemo, useId } from 'react';
+import { useRef, useEffect, useState, useMemo, useId, useCallback } from 'react';
 import styles from './ScrollingText.module.css';
 
 interface ScrollingTextProps {
@@ -41,12 +41,19 @@ const ScrollingText = ({
   const animationRef = useRef<number>(0);
   const lastTimeRef = useRef<number>(0);
   const offsetRef = useRef<number>(0);
+  const isRunningRef = useRef(false);
+  const spacingRef = useRef(0);
+  const speedRef = useRef(speed);
 
   const [spacing, setSpacing] = useState(0);
   const [containerWidth, setContainerWidth] = useState(BASE_WIDTH);
 
   const uid = useId();
   const pathId = `curve-${uid}`;
+
+  // Keep refs in sync
+  spacingRef.current = spacing;
+  speedRef.current = speed;
 
   const text = useMemo(() => {
     const trimmed = marqueeText.replace(/\s+$/, '');
@@ -76,6 +83,46 @@ const ScrollingText = ({
   const totalText = useMemo(() => text.repeat(repetitions), [text, repetitions]);
   const ready = spacing > 0;
 
+  const startAnimation = useCallback(() => {
+    if (isRunningRef.current || !spacingRef.current) return;
+    isRunningRef.current = true;
+    lastTimeRef.current = 0;
+
+    const step = (currentTime: number) => {
+      if (!isRunningRef.current) return;
+
+      if (!lastTimeRef.current) lastTimeRef.current = currentTime;
+
+      const deltaTime = Math.min(currentTime - lastTimeRef.current, 32);
+      lastTimeRef.current = currentTime;
+
+      if (textPathRef.current && spacingRef.current) {
+        const delta = (dirRef.current === 'right' ? speedRef.current : -speedRef.current) * (deltaTime / 16);
+        let newOffset = offsetRef.current + delta;
+
+        const sp = spacingRef.current;
+        if (newOffset <= -sp) newOffset += sp;
+        if (newOffset >= sp) newOffset -= sp;
+
+        offsetRef.current = newOffset;
+        textPathRef.current.setAttribute('startOffset', newOffset + 'px');
+      }
+
+      animationRef.current = requestAnimationFrame(step);
+    };
+
+    animationRef.current = requestAnimationFrame(step);
+  }, []);
+
+  const stopAnimation = useCallback(() => {
+    isRunningRef.current = false;
+    if (animationRef.current) {
+      cancelAnimationFrame(animationRef.current);
+      animationRef.current = 0;
+    }
+  }, []);
+
+  // Resize observer
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -101,6 +148,7 @@ const ScrollingText = ({
     };
   }, []);
 
+  // Measure text spacing
   useEffect(() => {
     const measure = () => {
       if (measureRef.current) {
@@ -113,42 +161,36 @@ const ScrollingText = ({
     return () => clearTimeout(timer);
   }, [text]);
 
+  // Reset offset when spacing changes
   useEffect(() => {
     if (!spacing || !textPathRef.current) return;
     textPathRef.current.setAttribute('startOffset', '0px');
     offsetRef.current = 0;
   }, [spacing]);
 
+  // Visibility observer - start/stop animation based on visibility
   useEffect(() => {
-    if (!spacing || !ready) return;
+    const container = containerRef.current;
+    if (!container || !ready) return;
 
-    const step = (currentTime: number) => {
-      if (!lastTimeRef.current) lastTimeRef.current = currentTime;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          startAnimation();
+        } else {
+          stopAnimation();
+        }
+      },
+      { threshold: 0, rootMargin: '100px' }
+    );
 
-      const deltaTime = Math.min(currentTime - lastTimeRef.current, 32);
-      lastTimeRef.current = currentTime;
-
-      if (textPathRef.current) {
-        const delta = (dirRef.current === 'right' ? speed : -speed) * (deltaTime / 16);
-        let newOffset = offsetRef.current + delta;
-
-        if (newOffset <= -spacing) newOffset += spacing;
-        if (newOffset >= spacing) newOffset -= spacing;
-
-        offsetRef.current = newOffset;
-        textPathRef.current.setAttribute('startOffset', newOffset + 'px');
-      }
-
-      animationRef.current = requestAnimationFrame(step);
-    };
-
-    animationRef.current = requestAnimationFrame(step);
+    observer.observe(container);
 
     return () => {
-      cancelAnimationFrame(animationRef.current);
-      lastTimeRef.current = 0;
+      observer.disconnect();
+      stopAnimation();
     };
-  }, [spacing, speed, ready]);
+  }, [ready, startAnimation, stopAnimation]);
 
   return (
     <div
