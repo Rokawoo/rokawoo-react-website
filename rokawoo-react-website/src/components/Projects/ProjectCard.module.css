@@ -1,42 +1,22 @@
 @import "../../vars.css";
 
 .container {
+  --card-accent: var(--color-accent-1);
   z-index: 1;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  background: var(--color-dark);
-  box-shadow: 0 2px 8px -2px var(--color-secondary);
-  padding: 18px 24px;
   max-width: 345px;
+  padding: 18px 24px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--card-accent) 0%, var(--color-secondary) 100%);
+  box-shadow: 0 2px 8px -2px var(--color-secondary);
   transition: all 0.3s ease-in-out, transform 0.1s;
   transform-style: preserve-3d;
   perspective: 1000px;
 }
 
-.container:nth-child(3n + 1) {  
-  background: linear-gradient(
-    180deg,
-    var(--color-accent-1) 0%,
-    var(--color-secondary) 100%
-  );
-}
-
-.container:nth-child(3n + 2) {  
-  background: linear-gradient(
-    180deg,
-    var(--color-accent-2) 0%,
-    var(--color-secondary) 100%
-  );
-}
-
-.container:nth-child(3n + 3) {  
-  background: linear-gradient(
-    180deg,
-    var(--color-accent-3) 0%,
-    var(--color-secondary) 100%
-  );
-}
+.container:nth-child(3n + 2) { --card-accent: var(--color-accent-2); }
+.container:nth-child(3n + 3) { --card-accent: var(--color-accent-3); }
 
 .vid {
   display: block;
@@ -57,63 +37,50 @@
   margin-top: 6px;
   color: var(--color-text-secondary);
   font-size: 22px;
-  font-weight: 400;
 }
 
 .skills {
-  width: 100%;
-  margin-top: 14px;
+  --skill-accent: var(--color-accent-1);
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 6px;
+  width: 100%;
+  margin-top: 14px;
   list-style: none;
 }
 
 .skill {
+  padding: 2px 22px;
+  border-radius: 100px;
+  background: var(--skill-accent);
   color: var(--color-text-primary);
   font-size: 25px;
-  font-weight: 400;
   text-shadow: 2px 2px var(--color-text-secondary);
-  border-radius: 100px;
-  background: var(--color-primary);
-  padding: 2px 22px;
 }
 
-.skills .skill:nth-child(3n + 1) {
-  background: var(--color-accent-1);
-}
-
-.skills .skill:nth-child(3n + 2) {
-  background: var(--color-accent-2);
-}
-
-.skills .skill:nth-child(3n + 3) {
-  background: var(--color-accent-3);
-}
+.skill:nth-child(3n + 2) { --skill-accent: var(--color-accent-2); }
+.skill:nth-child(3n + 3) { --skill-accent: var(--color-accent-3); }
 
 .links {
-  width: 100%;
-  margin-top: 26px;
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  margin-top: 26px;
 }
 
 .link {
-  text-decoration: none;
+  padding: 1px 22px;
+  border-radius: 100px;
+  background: var(--color-primary);
   color: var(--color-text-primary);
   font-size: 30px;
   font-weight: 600;
-  border-radius: 100px;
-  background: var(--color-primary);
-  padding: 1px 22px;
+  text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 
 .link:hover {
   transform: translateY(-2px) rotate(-2deg);
-  animation: shake 500ms ease-in-out infinite;
-  background: var(--color-dark);
   background: repeating-linear-gradient(
     45deg,
     var(--color-accent-1) 0 20%,
@@ -124,6 +91,7 @@
   outline: 3px solid var(--color-primary);
   outline-offset: -3px;
   text-shadow: 2px 2px var(--color-text-primary);
+  animation: shake 500ms ease-in-out infinite;
 }
 
 @keyframes shake {
@@ -135,7 +103,5 @@
 }
 
 @media screen and (max-width: 480px) {
-  .container {
-    min-width: 300px;
-  }
+  .container { min-width: 300px; }
 }
