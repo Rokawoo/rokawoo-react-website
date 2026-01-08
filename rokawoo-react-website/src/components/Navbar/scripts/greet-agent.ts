@@ -1,31 +1,31 @@
+import { getAssetUrl } from "../../../utils";
+
+const UNKNOWN_AGENT = "UNKNΘWN USΣR";
+
+const detectUserAgent = (): string => {
+    const ua = navigator.userAgent;
+
+    // Check Edge first (contains both Chrome and Edg)
+    if (ua.includes("Edg/")) return "Edge";
+    if (ua.includes("Chrome/")) return "Chrome";
+    if (ua.includes("Firefox/")) return "Firefox";
+
+    return UNKNOWN_AGENT;
+};
+
 export const greetAgent = (): [string, string | null] => {
     const now = new Date();
     const userAgent = detectUserAgent();
-    const isUnknownAgent = userAgent === "UNKNΘWN USΣR";
-    
-    const hours = (now.getHours() % 12 || 12);
-    const meridiem = now.getHours() >= 12 ? 'PM' : 'AM';
-    const formattedDate = `${now.getMonth() + 1}/${now.getDate()}`;
-    const formattedMinutes = now.getMinutes().toString().padStart(2, '0');
 
-    const browserImage = isUnknownAgent? null : getBrowserImage(userAgent);
+    const hours = now.getHours();
+    const h12 = hours % 12 || 12;
+    const meridiem = hours >= 12 ? "PM" : "AM";
+    const mins = now.getMinutes().toString().padStart(2, "0");
+    const date = `${now.getMonth() + 1}/${now.getDate()}`;
 
-    return [`DispΔtcth ${userAgent} - ${formattedDate}, ${hours}:${formattedMinutes} ${meridiem}`, browserImage];
-};
+    const browserImage = userAgent === UNKNOWN_AGENT
+        ? null
+        : getAssetUrl(`nav/${userAgent.toLowerCase()}.webp`);
 
-const detectUserAgent = (): string => {
-    const userAgentMatch = navigator.userAgent.match(/(Mozilla\/[\d.]+ \(\S+\)|Chrome\/[\d.]+|Edg\/[\d.]+|Firefox\/[\d.]+)/);
-    if (!userAgentMatch) return "UNKNΘWN USΣR";
-
-    let userAgent = userAgentMatch[0].replace(/\/[\d.]+$/, '').replace(/(Mozilla|Firefox)\/|\s+\(.*?\)/g, '');
-    if (userAgent === "Chrome" && navigator.userAgent.includes("Edg")) {
-        userAgent = "Edge";
-    }
-    return userAgent;
-};
-
-import { getAssetUrl } from "../../../utils";
-
-const getBrowserImage = (userAgent: string): string => {
-    return getAssetUrl(`nav/${userAgent.toLowerCase()}.webp`);
+    return [`DispΔtcth ${userAgent} - ${date}, ${h12}:${mins} ${meridiem}`, browserImage];
 };

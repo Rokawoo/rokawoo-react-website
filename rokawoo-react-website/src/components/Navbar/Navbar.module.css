@@ -10,8 +10,8 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 61px;
-  z-index: 2;
   margin: 0 10%;
+  z-index: 2;
 }
 
 .browserImg {
@@ -24,8 +24,8 @@
   position: relative;
   font-size: 30px;
   font-weight: 600;
-  text-decoration: none;
   color: var(--color-text-primary);
+  text-decoration: none;
 }
 
 .menuBtn {
@@ -50,15 +50,19 @@
 
 .menuItem {
   text-decoration: none;
-  text-decoration-color: transparent;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out,
+              text-shadow 0.3s ease-in-out,
+              transform 0.3s ease-in-out,
+              font-size 0.3s ease-in-out,
+              font-weight 0.3s ease-in-out;
+  will-change: transform;
 }
 
 .menuItem:hover {
   color: var(--color-light);
   text-shadow: 2px 2px 4px rgba(var(--color-light-rgb), 0.6);
   text-decoration: underline;
-  text-decoration-thickness: 0.14em; 
+  text-decoration-thickness: 0.14em;
   font-size: 1.1em;
   font-weight: 500;
   transform: translateY(-2px) translateX(5%);
@@ -92,9 +96,7 @@
 
   .title {
     align-self: center;
-    margin-top: 17%;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 17% 0 0;
     text-align: center;
     min-width: 100%;
     min-height: 14.8vw;
@@ -102,12 +104,12 @@
   }
 
   .browserImg {
-    min-width: 10vw;
     left: 50%;
     top: 50%;
+    min-width: 10vw;
     transform: translate(-50%, -9vw);
   }
-  
+
   .menu {
     position: absolute;
     right: 0;
@@ -128,6 +130,7 @@
     flex-direction: column;
     align-items: center;
     gap: 13px;
+    padding: 24px 33px;
     border: 5px solid transparent;
     border-image: repeating-linear-gradient(
       45deg,
@@ -139,13 +142,11 @@
       var(--color-accent-3) 60px
     ) 5;
     border-radius: 10px;
-    background: var(--color-primary);
     background: linear-gradient(
       0deg,
       rgba(var(--color-primary-rgb), 0.2) 0%,
       rgba(var(--color-primary-rgb), 1) 100%
     );
-    padding: 24px 33px;
     box-shadow: 0 0 4px 0 rgba(var(--color-primary), 0.25);
   }
 
