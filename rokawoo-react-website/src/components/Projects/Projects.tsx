@@ -4,7 +4,6 @@ import styles from "./Projects.module.css";
 import projects from "../../data/projects.json";
 import { ProjectCard } from "./ProjectCard";
 
-// Observer config - generous rootMargin for early loading
 const OBSERVER_OPTIONS: IntersectionObserverInit = {
   threshold: 0,
   rootMargin: "500px 0px",
@@ -20,7 +19,7 @@ export const Projects = () => {
     const videos = section.querySelectorAll<HTMLVideoElement>("video[data-src]");
     if (!videos.length) return;
 
-    const observer = new IntersectionObserver((entries, obs) => {
+    const observer = new IntersectionObserver((entries) => {
       for (const entry of entries) {
         if (!entry.isIntersecting) continue;
         
@@ -28,8 +27,8 @@ export const Projects = () => {
         const src = video.dataset.src;
         if (src && !video.src) {
           video.src = src;
+          observer.unobserve(video);
           delete video.dataset.src;
-          obs.unobserve(video);
         }
       }
     }, OBSERVER_OPTIONS);
