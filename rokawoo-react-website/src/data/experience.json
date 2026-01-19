@@ -6,6 +6,12 @@
     "imageSrc": "experience/lockheedmartinspace.webp"
   },
   {
+    "name": "Application Engineer",
+    "origin": "@Vanguard",
+    "attributes": ["FinTech & investment platforms", "Full-stack / Cloud microservices"],
+    "imageSrc": "experience/vanguard.webp"
+  },
+  {
     "name": "Software Engineer",
     "origin": "@Unisys",
     "attributes": ["Enterprise software development", "Automation tools / Sys Engineer"],
