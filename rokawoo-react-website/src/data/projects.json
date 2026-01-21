@@ -84,7 +84,7 @@
     "videoSrc": "projects/wallBallGame.mp4",
     "description": "Enter a philosophical conundrum where you are your worst opponent in the style of a retro pong game.",
     "skills": ["Game Dev", "OPP", "Pygame", "Python"],
-    "demo": null,
+    "demo": "https://rokawoo.github.io/wall-ball-game",
     "source": "https://github.com/Rokawoo/wall-ball-game"
   },
   {
